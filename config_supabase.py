@@ -8,12 +8,13 @@ load_dotenv()
 SUPABASE_URL = os.getenv("VITE_SUPABASE_URL")
 SUPABASE_ANON_KEY = os.getenv("VITE_SUPABASE_ANON_KEY")
 
-# Extrair dados da URL do Supabase para configuração PostgreSQL
-DB_HOST = SUPABASE_URL.replace("https://", "").replace(".supabase.co", ".db.supabase.co") if SUPABASE_URL else None
-DB_PORT = os.getenv("DB_PORT", "5432")
+# Configuração para conexão PostgreSQL direta
+# Ao invés de calcular o host, utilizamos diretamente o valor do .env
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT", "6543")  # Atualizado para o novo valor padrão
 DB_NAME = os.getenv("DB_NAME", "postgres")
-DB_USER = os.getenv("DB_USER", "postgres")
-DB_PASSWORD = os.getenv("DB_PASSWORD")  # Deve ser configurado no .env
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
 
 # Caminho para o arquivo de dados da F1
 F1_DATA_FILE = os.getenv("F1_DATA_FILE", "f1_data.txt")

@@ -16,9 +16,9 @@ class SupabaseLoader:
         self.conn_string = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
     
     async def connect(self) -> None:
-        """Estabelece conexão com o banco de dados Supabase"""
+        """Estabelece conexão direta com o banco de dados Supabase"""
         try:
-            logger.info(f"Conectando ao Supabase PostgreSQL em {DB_HOST}:{DB_PORT}/{DB_NAME}...")
+            logger.info(f"Conectando diretamente ao PostgreSQL do Supabase em {DB_HOST}:{DB_PORT}/{DB_NAME}...")
             self.pool = await asyncpg.create_pool(
                 dsn=self.conn_string,
                 min_size=1,
@@ -32,6 +32,9 @@ class SupabaseLoader:
             
         except Exception as e:
             logger.error(f"Erro ao conectar ao Supabase: {e}")
+            # Mask password in log
+            safe_conn_string = self.conn_string.replace(DB_PASSWORD, "********") if DB_PASSWORD else self.conn_string
+            logger.error(f"Connection string: {safe_conn_string}")
             raise
     
     async def disconnect(self) -> None:
