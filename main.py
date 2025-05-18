@@ -45,25 +45,28 @@ class PerformanceMonitor:
         """Registra quantidade de dados meteorológicos processados"""
         self.weather_data_count += count
     
-    def report_if_needed(self, force: bool = False):
-        """Gera relatório periódico de performance"""
-        current_time = time.time()
-        if force or (current_time - self.last_report_time >= 60):  # Relatório a cada minuto
-            elapsed = current_time - self.start_time
-            
-            logger.info(f"=== Relatório de Extração ===")
-            logger.info(f"Tempo total em execução: {elapsed:.2f}s")
-            if os.path.exists(F1_DATA_FILE):
-                file_size = os.path.getsize(F1_DATA_FILE)
-                logger.info(f"Tamanho do arquivo: {file_size/1024:.2f} KB ({file_size} bytes)")
-                growth_rate = file_size / (elapsed if elapsed > 0 else 1)
-                logger.info(f"Taxa média de crescimento: {growth_rate:.2f} bytes/s")
-            else:
-                logger.info(f"Arquivo não existe ainda")
-            
-            logger.info(f"Dados meteorológicos processados: {self.weather_data_count}")
-            
-            self.last_report_time = current_time
+def report_if_needed(self, force: bool = False):
+    """Gera relatório periódico de performance"""
+    current_time = time.time()
+    if force or (current_time - self.last_report_time >= 60):  # Relatório a cada minuto
+        elapsed = current_time - self.start_time
+        recent_batches = self.batch_times[-100:] if self.batch_times else []
+        
+        logger.info(f"=== Relatório de Performance ===")
+        logger.info(f"Tempo total em execução: {elapsed:.2f}s")
+        logger.info(f"Total de linhas processadas: {self.total_lines_processed}")
+        logger.info(f"Total de registros inseridos: {self.total_records_inserted}")
+        
+        if recent_batches and sum(recent_batches) > 0:  # Verificação para evitar divisão por zero
+            avg_batch_time = sum(recent_batches) / len(recent_batches)
+            max_batch_time = max(recent_batches)
+            logger.info(f"Tempo médio de processamento por lote: {avg_batch_time*1000:.2f}ms")
+            logger.info(f"Tempo máximo de processamento por lote: {max_batch_time*1000:.2f}ms")
+            logger.info(f"Taxa de processamento: {len(recent_batches)/sum(recent_batches):.2f} lotes/s")
+        else:
+            logger.info("Não há dados de processamento ou todos os tempos são zero")
+        
+        self.last_report_time = current_time
 
 # Configura o logger
 logger.add("f1_extraction.log", rotation="10 MB", level="INFO", retention="1 week")

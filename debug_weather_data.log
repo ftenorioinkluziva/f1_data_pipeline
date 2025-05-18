@@ -1,0 +1,78 @@
+2025-05-17 12:22:22.665 | INFO     | __main__:diagnose_weather_data_issues:17 - === INICIANDO DIAGNÓSTICO DE DADOS METEOROLÓGICOS ===
+2025-05-17 12:22:22.669 | INFO     | __main__:diagnose_weather_data_issues:29 - Verificando configurações de banco de dados:
+2025-05-17 12:22:22.669 | INFO     | __main__:diagnose_weather_data_issues:30 - Host: db.hxggoxiuxlztjbseipxn.supabase.co
+2025-05-17 12:22:22.671 | INFO     | __main__:diagnose_weather_data_issues:31 - Porta: 5432
+2025-05-17 12:22:22.671 | INFO     | __main__:diagnose_weather_data_issues:32 - Banco: postgres
+2025-05-17 12:22:22.671 | INFO     | __main__:diagnose_weather_data_issues:33 - Usuário: postgres
+2025-05-17 12:22:22.679 | INFO     | __main__:diagnose_weather_data_issues:34 - Senha: ****************
+2025-05-17 12:22:22.679 | INFO     | __main__:diagnose_weather_data_issues:39 - 
+=== TESTE DE CONEXÃO ===
+2025-05-17 12:22:23.080 | INFO     | __main__:diagnose_weather_data_issues:46 - ✅ Conexão com o banco estabelecida com sucesso!
+2025-05-17 12:22:23.166 | INFO     | __main__:diagnose_weather_data_issues:50 - PostgreSQL: PostgreSQL 15.8 on aarch64-unknown-linux-gnu, compiled by gcc (GCC) 13.2.0, 64-bit
+2025-05-17 12:22:23.167 | INFO     | __main__:diagnose_weather_data_issues:53 - 
+=== VERIFICAÇÃO DE TABELAS ===
+2025-05-17 12:22:23.249 | INFO     | __main__:diagnose_weather_data_issues:61 - Tabelas encontradas (19):
+2025-05-17 12:22:23.249 | INFO     | __main__:diagnose_weather_data_issues:63 -   - car_positions
+2025-05-17 12:22:23.250 | INFO     | __main__:diagnose_weather_data_issues:63 -   - car_telemetry
+2025-05-17 12:22:23.251 | INFO     | __main__:diagnose_weather_data_issues:63 -   - circuits
+2025-05-17 12:22:23.251 | INFO     | __main__:diagnose_weather_data_issues:63 -   - countries
+2025-05-17 12:22:23.252 | INFO     | __main__:diagnose_weather_data_issues:63 -   - driver_positions
+2025-05-17 12:22:23.252 | INFO     | __main__:diagnose_weather_data_issues:63 -   - drivers
+2025-05-17 12:22:23.252 | INFO     | __main__:diagnose_weather_data_issues:63 -   - lap_data
+2025-05-17 12:22:23.253 | INFO     | __main__:diagnose_weather_data_issues:63 -   - positions
+2025-05-17 12:22:23.253 | INFO     | __main__:diagnose_weather_data_issues:63 -   - race_control
+2025-05-17 12:22:23.254 | INFO     | __main__:diagnose_weather_data_issues:63 -   - race_control_messages
+2025-05-17 12:22:23.254 | INFO     | __main__:diagnose_weather_data_issues:63 -   - races
+2025-05-17 12:22:23.254 | INFO     | __main__:diagnose_weather_data_issues:63 -   - session_drivers
+2025-05-17 12:22:23.255 | INFO     | __main__:diagnose_weather_data_issues:63 -   - sessions
+2025-05-17 12:22:23.255 | INFO     | __main__:diagnose_weather_data_issues:63 -   - team_radio
+2025-05-17 12:22:23.255 | INFO     | __main__:diagnose_weather_data_issues:63 -   - teamradio_events
+2025-05-17 12:22:23.256 | INFO     | __main__:diagnose_weather_data_issues:63 -   - telemetry
+2025-05-17 12:22:23.256 | INFO     | __main__:diagnose_weather_data_issues:63 -   - weather
+2025-05-17 12:22:23.256 | INFO     | __main__:diagnose_weather_data_issues:63 -   - weather_data
+2025-05-17 12:22:23.257 | INFO     | __main__:diagnose_weather_data_issues:63 -   - weather_events
+2025-05-17 12:22:23.257 | INFO     | __main__:diagnose_weather_data_issues:68 - ✅ Tabela weather_data encontrada!
+2025-05-17 12:22:23.258 | INFO     | __main__:diagnose_weather_data_issues:95 - 
+=== VERIFICAÇÃO DA TABELA DE SESSÕES ===
+2025-05-17 12:22:23.260 | INFO     | __main__:diagnose_weather_data_issues:100 - ✅ Tabela sessions encontrada!
+2025-05-17 12:22:23.344 | ERROR    | __main__:diagnose_weather_data_issues:264 - ❌ Erro ao conectar ao banco de dados: column "session_key" does not exist
+2025-05-17 12:22:23.379 | INFO     | __main__:diagnose_weather_data_issues:270 - Conexão fechada.
+2025-05-17 12:22:52.766 | INFO     | __main__:diagnose_weather_data_issues:17 - === INICIANDO DIAGNÓSTICO DE DADOS METEOROLÓGICOS ===
+2025-05-17 12:22:52.768 | INFO     | __main__:diagnose_weather_data_issues:29 - Verificando configurações de banco de dados:
+2025-05-17 12:22:52.769 | INFO     | __main__:diagnose_weather_data_issues:30 - Host: db.hxggoxiuxlztjbseipxn.supabase.co
+2025-05-17 12:22:52.769 | INFO     | __main__:diagnose_weather_data_issues:31 - Porta: 5432
+2025-05-17 12:22:52.770 | INFO     | __main__:diagnose_weather_data_issues:32 - Banco: postgres
+2025-05-17 12:22:52.770 | INFO     | __main__:diagnose_weather_data_issues:33 - Usuário: postgres
+2025-05-17 12:22:52.770 | INFO     | __main__:diagnose_weather_data_issues:34 - Senha: ****************
+2025-05-17 12:22:52.771 | INFO     | __main__:diagnose_weather_data_issues:39 - 
+=== TESTE DE CONEXÃO ===
+2025-05-17 12:22:53.238 | INFO     | __main__:diagnose_weather_data_issues:46 - ✅ Conexão com o banco estabelecida com sucesso!
+2025-05-17 12:22:53.315 | INFO     | __main__:diagnose_weather_data_issues:50 - PostgreSQL: PostgreSQL 15.8 on aarch64-unknown-linux-gnu, compiled by gcc (GCC) 13.2.0, 64-bit
+2025-05-17 12:22:53.315 | INFO     | __main__:diagnose_weather_data_issues:53 - 
+=== VERIFICAÇÃO DE TABELAS ===
+2025-05-17 12:22:53.393 | INFO     | __main__:diagnose_weather_data_issues:61 - Tabelas encontradas (19):
+2025-05-17 12:22:53.393 | INFO     | __main__:diagnose_weather_data_issues:63 -   - car_positions
+2025-05-17 12:22:53.394 | INFO     | __main__:diagnose_weather_data_issues:63 -   - car_telemetry
+2025-05-17 12:22:53.394 | INFO     | __main__:diagnose_weather_data_issues:63 -   - circuits
+2025-05-17 12:22:53.394 | INFO     | __main__:diagnose_weather_data_issues:63 -   - countries
+2025-05-17 12:22:53.395 | INFO     | __main__:diagnose_weather_data_issues:63 -   - driver_positions
+2025-05-17 12:22:53.395 | INFO     | __main__:diagnose_weather_data_issues:63 -   - drivers
+2025-05-17 12:22:53.395 | INFO     | __main__:diagnose_weather_data_issues:63 -   - lap_data
+2025-05-17 12:22:53.395 | INFO     | __main__:diagnose_weather_data_issues:63 -   - positions
+2025-05-17 12:22:53.396 | INFO     | __main__:diagnose_weather_data_issues:63 -   - race_control
+2025-05-17 12:22:53.396 | INFO     | __main__:diagnose_weather_data_issues:63 -   - race_control_messages
+2025-05-17 12:22:53.396 | INFO     | __main__:diagnose_weather_data_issues:63 -   - races
+2025-05-17 12:22:53.397 | INFO     | __main__:diagnose_weather_data_issues:63 -   - session_drivers
+2025-05-17 12:22:53.397 | INFO     | __main__:diagnose_weather_data_issues:63 -   - sessions
+2025-05-17 12:22:53.397 | INFO     | __main__:diagnose_weather_data_issues:63 -   - team_radio
+2025-05-17 12:22:53.398 | INFO     | __main__:diagnose_weather_data_issues:63 -   - teamradio_events
+2025-05-17 12:22:53.398 | INFO     | __main__:diagnose_weather_data_issues:63 -   - telemetry
+2025-05-17 12:22:53.398 | INFO     | __main__:diagnose_weather_data_issues:63 -   - weather
+2025-05-17 12:22:53.399 | INFO     | __main__:diagnose_weather_data_issues:63 -   - weather_data
+2025-05-17 12:22:53.399 | INFO     | __main__:diagnose_weather_data_issues:63 -   - weather_events
+2025-05-17 12:22:53.399 | INFO     | __main__:diagnose_weather_data_issues:68 - ✅ Tabela weather_data encontrada!
+2025-05-17 12:22:53.399 | INFO     | __main__:diagnose_weather_data_issues:95 - 
+=== VERIFICAÇÃO DA TABELA DE SESSÕES ===
+2025-05-17 12:22:53.399 | INFO     | __main__:diagnose_weather_data_issues:100 - ✅ Tabela sessions encontrada!
+2025-05-17 12:22:53.472 | ERROR    | __main__:diagnose_weather_data_issues:264 - ❌ Erro ao conectar ao banco de dados: column "session_key" does not exist
+2025-05-17 12:22:53.507 | INFO     | __main__:diagnose_weather_data_issues:270 - Conexão fechada.
