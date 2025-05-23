@@ -115,16 +115,16 @@ class WeatherDataProcessor:
             async with self.supabase.pool.acquire() as conn:
                 # Busca a sessão pelo ID
                 row = await conn.fetchrow('''
-                    SELECT id, session_key, name, date, circuit 
+                    SELECT id, key, name, start_date, end_date, race_id 
                     FROM public.sessions 
                     WHERE id = $1
-                ''', self.session_id)
+                ''', self.key)
                 
                 if row:
                     self.session_info = dict(row)
-                    logger.info(f"Sessão encontrada: ID={self.session_id}, Key={row['session_key']}, Nome={row['name']}, Circuito={row['circuit']}")
+                    logger.info(f"Sessão encontrada: ID={self.key},  Nome={row['name']}")
                 else:
-                    logger.warning(f"ATENÇÃO: Sessão com ID={self.session_id} não encontrada no banco de dados.")
+                    logger.warning(f"ATENÇÃO: Sessão com ID={self.key} não encontrada no banco de dados.")
                     logger.warning("Os dados serão inseridos com este ID mesmo assim, mas verifique se está correto!")
         except Exception as e:
             logger.error(f"Erro ao verificar sessão: {e}")
@@ -169,7 +169,7 @@ class WeatherDataProcessor:
                             created_at, updated_at
                         ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
                     ''', 
-                        self.session_id, timestamp, air_temp, track_temp, humidity,
+                        self.id, timestamp, air_temp, track_temp, humidity,
                         pressure, rainfall, wind_direction, wind_speed,
                         datetime.now(), datetime.now()
                     )

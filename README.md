@@ -47,16 +47,6 @@ BATCH_INTERVAL_MS=100
 
 ## Utilização
 
-### Testar Conexão com o Supabase
-
-Antes de executar o pipeline completo, teste se a conexão com o Supabase está funcionando:
-
-```bash
-python test_supabase.py
-```
-
-Se a conexão for bem-sucedida, você verá uma mensagem de confirmação.
-
 ### Executar o Pipeline
 
 Para iniciar o pipeline:
