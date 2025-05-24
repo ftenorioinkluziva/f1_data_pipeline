@@ -192,3 +192,7 @@ Você pode personalizar o comportamento do pipeline editando os seguintes parâm
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
+
+## requisitos encontrados
+Essa linha indica fim da exxtração de dados
+['SessionInfo', {'Meeting': {'Key': 1261, 'Name': 'Monaco Grand Prix', 'OfficialName': 'FORMULA 1 TAG HEUER GRAND PRIX DE MONACO 2025', 'Location': 'Monaco', 'Number': 8, 'Country': {'Key': 114, 'Code': 'MON', 'Name': 'Monaco'}, 'Circuit': {'Key': 22, 'ShortName': 'Monte Carlo'}}, 'SessionStatus': 'Finalised', 'ArchiveStatus': {'Status': 'Complete'}, 'Key': 9974, 'Type': 'Practice', 'Number': 3, 'Name': 'Practice 3', 'StartDate': '2025-05-24T12:30:00', 'EndDate': '2025-05-24T13:30:00', 'GmtOffset': '02:00:00', 'Path': '2025/2025-05-25_Monaco_Grand_Prix/2025-05-24_Practice_3/', '_kf': True}, '2025-05-24T11:35:14.162Z']

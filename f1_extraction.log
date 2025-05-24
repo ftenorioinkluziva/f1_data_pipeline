@@ -1,0 +1,71 @@
+2025-05-24 07:57:19.915 | INFO     | __main__:<module>:363 - Iniciando processo de extração de dados F1 com processamento de dados meteorológicos
+2025-05-24 07:57:19.918 | INFO     | __main__:main:228 - Iniciando extração de dados F1 para o arquivo: f1_data.txt
+2025-05-24 07:57:19.918 | INFO     | __main__:main:229 - Tópicos monitorados: TimingData, RaceControlMessages, DriverRaceInfo, TimingAppData, Position.z, WeatherData, DriverList, SessionInfo, TeamRadio, CarData.z, PitLaneTimeCollection
+2025-05-24 07:57:19.919 | INFO     | __main__:main:230 - Processamento especial: dados meteorológicos serão inseridos no banco de dados
+2025-05-24 07:57:19.919 | INFO     | __main__:main:231 - ID da sessão especificado: 232
+2025-05-24 07:57:19.919 | INFO     | supabase_loader:connect:21 - Conectando diretamente ao PostgreSQL do Supabase em db.hxggoxiuxlztjbseipxn.supabase.co:5432/postgres...
+2025-05-24 07:57:20.298 | INFO     | supabase_loader:connect:28 - Conexão estabelecida com sucesso
+2025-05-24 07:57:20.392 | INFO     | supabase_loader:_verify_tables_exist:65 - Tabelas encontradas: ['car_positions', 'car_telemetry', 'driver_positions', 'race_control_messages', 'session_drivers', 'sessions', 'team_radio', 'weather_data']
+2025-05-24 07:57:20.393 | INFO     | supabase_loader:_verify_tables_exist:73 - Todas as tabelas necessárias foram encontradas
+2025-05-24 07:57:20.484 | INFO     | supabase_loader:_verify_sessions_table_structure:103 - Estrutura da tabela sessions verificada com sucesso
+2025-05-24 07:57:20.563 | INFO     | supabase_loader:_verify_weather_data_table_structure:129 - Estrutura da tabela weather_data verificada com sucesso
+2025-05-24 07:57:20.602 | INFO     | __main__:initialize:92 - Conexão com o banco de dados estabelecida para dados meteorológicos
+2025-05-24 07:57:20.677 | INFO     | __main__:_check_session:116 - Sessão encontrada: ID=232, Key=9974, Nome=Practice 3, Tipo=Practice
+2025-05-24 07:57:20.721 | INFO     | __main__:main:247 - Iniciando extração de dados da F1 para arquivo: f1_data.txt
+2025-05-24 07:57:20.721 | INFO     | __main__:main:253 - Monitorando arquivo de dados...
+2025-05-24 07:57:20.722 | INFO     | extractor:start_extraction:25 - Iniciando extração de dados da F1 para: f1_data.txt
+2025-05-24 07:57:20.752 | INFO     | extractor:start_extraction:37 - Processo de extração iniciado com PID: 21276
+2025-05-24 08:59:41.574 | INFO     | __main__:handle_shutdown:71 - Sinal de encerramento recebido (2)
+2025-05-24 08:59:41.575 | INFO     | __main__:main:331 - Encerrando extração...
+2025-05-24 08:59:41.576 | INFO     | __main__:main:334 - Interrompendo extração de dados...
+2025-05-24 08:59:41.576 | INFO     | extractor:stop_extraction:85 - Parando processo de extração...
+2025-05-24 08:59:41.577 | INFO     | extractor:stop_extraction:89 - Processo de extração encerrado
+2025-05-24 08:59:41.684 | ERROR    | extractor:start_extraction:49 - Processo terminou com código de erro 3221225786: 2025-05-24 08:59:41,567 - WARNING: Keyboard interrupt - exiting...
+
+2025-05-24 08:59:41.686 | ERROR    | extractor:start_extraction:55 - Erro ao executar a extração: Extração falhou: 2025-05-24 08:59:41,567 - WARNING: Keyboard interrupt - exiting...
+
+2025-05-24 08:59:41.687 | ERROR    | __main__:main:347 - Erro ao encerrar tarefa de extração: Extração falhou: 2025-05-24 08:59:41,567 - WARNING: Keyboard interrupt - exiting...
+
+2025-05-24 08:59:41.690 | INFO     | supabase_loader:disconnect:44 - Conexão com o Supabase fechada
+2025-05-24 08:59:41.691 | INFO     | __main__:close:209 - Conexão com o banco de dados fechada (processador de dados meteorológicos)
+2025-05-24 08:59:41.693 | INFO     | __main__:main:353 - Gerando relatório final...
+2025-05-24 08:59:41.694 | INFO     | __main__:report_if_needed:54 - === Relatório de Performance ===
+2025-05-24 08:59:41.695 | INFO     | __main__:report_if_needed:55 - Tempo total em execução: 3741.77s
+2025-05-24 08:59:41.696 | INFO     | __main__:report_if_needed:56 - Total de linhas processadas: 0
+2025-05-24 08:59:41.697 | INFO     | __main__:report_if_needed:57 - Dados meteorológicos processados: 0
+2025-05-24 08:59:41.698 | INFO     | __main__:report_if_needed:58 - Tamanho atual do arquivo: 0.00 KB
+2025-05-24 08:59:41.698 | INFO     | __main__:main:360 - Extração encerrada
+2025-05-24 09:30:37.572 | INFO     | __main__:<module>:363 - Iniciando processo de extração de dados F1 com processamento de dados meteorológicos
+2025-05-24 09:30:37.575 | INFO     | __main__:main:228 - Iniciando extração de dados F1 para o arquivo: f1_data.txt
+2025-05-24 09:30:37.576 | INFO     | __main__:main:229 - Tópicos monitorados: TimingData, RaceControlMessages, DriverRaceInfo, TimingAppData, Position.z, WeatherData, DriverList, SessionInfo, TeamRadio, CarData.z, PitLaneTimeCollection
+2025-05-24 09:30:37.576 | INFO     | __main__:main:230 - Processamento especial: dados meteorológicos serão inseridos no banco de dados
+2025-05-24 09:30:37.576 | INFO     | __main__:main:231 - ID da sessão especificado: 233
+2025-05-24 09:30:37.576 | INFO     | supabase_loader:connect:21 - Conectando diretamente ao PostgreSQL do Supabase em db.hxggoxiuxlztjbseipxn.supabase.co:5432/postgres...
+2025-05-24 09:30:37.976 | INFO     | supabase_loader:connect:28 - Conexão estabelecida com sucesso
+2025-05-24 09:30:38.070 | INFO     | supabase_loader:_verify_tables_exist:65 - Tabelas encontradas: ['car_positions', 'car_telemetry', 'driver_positions', 'race_control_messages', 'session_drivers', 'sessions', 'team_radio', 'weather_data']
+2025-05-24 09:30:38.071 | INFO     | supabase_loader:_verify_tables_exist:73 - Todas as tabelas necessárias foram encontradas
+2025-05-24 09:30:38.165 | INFO     | supabase_loader:_verify_sessions_table_structure:103 - Estrutura da tabela sessions verificada com sucesso
+2025-05-24 09:30:38.248 | INFO     | supabase_loader:_verify_weather_data_table_structure:129 - Estrutura da tabela weather_data verificada com sucesso
+2025-05-24 09:30:38.290 | INFO     | __main__:initialize:92 - Conexão com o banco de dados estabelecida para dados meteorológicos
+2025-05-24 09:30:38.376 | INFO     | __main__:_check_session:116 - Sessão encontrada: ID=233, Key=9975, Nome=Qualifying, Tipo=Qualifying
+2025-05-24 09:30:38.419 | INFO     | __main__:main:247 - Iniciando extração de dados da F1 para arquivo: f1_data.txt
+2025-05-24 09:30:38.419 | INFO     | __main__:main:253 - Monitorando arquivo de dados...
+2025-05-24 09:30:38.419 | INFO     | extractor:start_extraction:25 - Iniciando extração de dados da F1 para: f1_data.txt
+2025-05-24 09:30:38.439 | INFO     | extractor:start_extraction:37 - Processo de extração iniciado com PID: 14728
+2025-05-24 12:33:30.151 | INFO     | __main__:handle_shutdown:71 - Sinal de encerramento recebido (2)
+2025-05-24 12:33:30.155 | INFO     | __main__:main:331 - Encerrando extração...
+2025-05-24 12:33:30.156 | INFO     | __main__:main:334 - Interrompendo extração de dados...
+2025-05-24 12:33:30.157 | INFO     | extractor:stop_extraction:85 - Parando processo de extração...
+2025-05-24 12:33:30.157 | INFO     | extractor:stop_extraction:89 - Processo de extração encerrado
+2025-05-24 12:33:30.218 | INFO     | __main__:handle_shutdown:71 - Sinal de encerramento recebido (2)
+2025-05-24 12:33:30.258 | INFO     | extractor:start_extraction:52 - Processo de extração concluído com sucesso
+2025-05-24 12:33:30.258 | INFO     | __main__:main:340 - Tarefa de extração concluída com sucesso
+2025-05-24 12:33:30.259 | INFO     | supabase_loader:disconnect:44 - Conexão com o Supabase fechada
+2025-05-24 12:33:30.259 | INFO     | __main__:close:209 - Conexão com o banco de dados fechada (processador de dados meteorológicos)
+2025-05-24 12:33:30.260 | INFO     | __main__:main:353 - Gerando relatório final...
+2025-05-24 12:33:30.260 | INFO     | __main__:report_if_needed:54 - === Relatório de Performance ===
+2025-05-24 12:33:30.260 | INFO     | __main__:report_if_needed:55 - Tempo total em execução: 10972.68s
+2025-05-24 12:33:30.260 | INFO     | __main__:report_if_needed:56 - Total de linhas processadas: 0
+2025-05-24 12:33:30.261 | INFO     | __main__:report_if_needed:57 - Dados meteorológicos processados: 0
+2025-05-24 12:33:30.261 | INFO     | __main__:report_if_needed:58 - Tamanho atual do arquivo: 0.00 KB
+2025-05-24 12:33:30.261 | INFO     | __main__:main:360 - Extração encerrada

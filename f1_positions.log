@@ -1,0 +1,1455 @@
+2025-05-24 07:21:44.428 | INFO     | __main__:monitor_positions:210 - Iniciando monitoramento de posições de carros para a sessão ID=232
+2025-05-24 07:21:44.430 | INFO     | __main__:monitor_positions:211 - Arquivo de entrada: f1_data_q1.txt
+2025-05-24 07:21:44.955 | INFO     | __main__:connect:69 - Conexão com o banco de dados estabelecida para session_id=232
+2025-05-24 07:21:45.053 | INFO     | __main__:connect:79 - Sessão encontrada: ID=232, Name=Practice 3, Type=Practice
+2025-05-24 07:22:45.471 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:22:45.471 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 60.4s
+2025-05-24 07:22:45.472 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:22:45.472 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:22:45.472 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:22:45.473 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:22:45.473 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:22:45.473 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:23:45.847 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:23:45.847 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 120.8s
+2025-05-24 07:23:45.848 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:23:45.848 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:23:45.848 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:23:45.849 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:23:45.849 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:23:45.849 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:24:46.068 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:24:46.069 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 181.0s
+2025-05-24 07:24:46.069 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:24:46.069 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:24:46.070 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:24:46.070 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:24:46.070 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:24:46.071 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:25:46.510 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:25:46.511 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 241.5s
+2025-05-24 07:25:46.512 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:25:46.513 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:25:46.514 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:25:46.514 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:25:46.515 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:25:46.515 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:26:46.896 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:26:46.897 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 301.8s
+2025-05-24 07:26:46.897 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:26:46.897 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:26:46.898 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:26:46.898 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:26:46.898 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:26:46.899 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:27:47.224 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:27:47.225 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 362.2s
+2025-05-24 07:27:47.225 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:27:47.226 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:27:47.226 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:27:47.227 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:27:47.228 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:27:47.228 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:28:47.587 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:28:47.588 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 422.5s
+2025-05-24 07:28:47.589 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:28:47.589 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:28:47.590 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:28:47.590 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:28:47.590 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:28:47.591 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:28:56.194 | INFO     | __main__:handle_shutdown:29 - Sinal de encerramento recebido (2)
+2025-05-24 07:42:35.888 | INFO     | __main__:monitor_positions:210 - Iniciando monitoramento de posições de carros para a sessão ID=232
+2025-05-24 07:42:35.888 | INFO     | __main__:monitor_positions:211 - Arquivo de entrada: f1_data_q1.txt
+2025-05-24 07:42:36.303 | INFO     | __main__:connect:69 - Conexão com o banco de dados estabelecida para session_id=232
+2025-05-24 07:42:36.391 | INFO     | __main__:connect:79 - Sessão encontrada: ID=232, Name=Practice 3, Type=Practice
+2025-05-24 07:43:36.698 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:43:36.698 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 60.3s
+2025-05-24 07:43:36.699 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:43:36.699 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:43:36.700 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:43:36.700 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:43:36.700 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:43:36.701 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:44:37.020 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:44:37.020 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 120.6s
+2025-05-24 07:44:37.021 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:44:37.021 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:44:37.022 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:44:37.022 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:44:37.023 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:44:37.023 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:45:37.299 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:45:37.299 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 180.9s
+2025-05-24 07:45:37.300 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:45:37.300 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:45:37.300 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:45:37.301 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:45:37.301 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:45:37.301 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:46:37.602 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:46:37.602 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 241.2s
+2025-05-24 07:46:37.602 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:46:37.603 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:46:37.603 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:46:37.603 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:46:37.604 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:46:37.604 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:47:37.904 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:47:37.904 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 301.5s
+2025-05-24 07:47:37.905 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:47:37.905 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:47:37.905 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:47:37.906 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:47:37.906 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:47:37.906 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:48:38.194 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:48:38.194 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 361.8s
+2025-05-24 07:48:38.195 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:48:38.195 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:48:38.195 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:48:38.196 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:48:38.196 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:48:38.196 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:49:38.675 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:49:38.676 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 422.3s
+2025-05-24 07:49:38.676 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:49:38.677 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:49:38.677 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:49:38.678 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:49:38.679 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:49:38.679 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:50:39.124 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:50:39.124 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 482.7s
+2025-05-24 07:50:39.125 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:50:39.125 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:50:39.126 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:50:39.126 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:50:39.126 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:50:39.127 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:51:39.514 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:51:39.514 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 543.1s
+2025-05-24 07:51:39.515 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:51:39.515 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:51:39.515 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:51:39.516 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:51:39.516 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:51:39.517 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:52:39.906 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:52:39.906 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 603.5s
+2025-05-24 07:52:39.907 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:52:39.907 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:52:39.908 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:52:39.908 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:52:39.908 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:52:39.909 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:53:40.279 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:53:40.280 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 663.9s
+2025-05-24 07:53:40.281 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:53:40.281 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:53:40.281 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:53:40.283 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:53:40.283 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:53:40.284 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:54:40.614 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:54:40.614 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 724.2s
+2025-05-24 07:54:40.615 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:54:40.615 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:54:40.615 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:54:40.616 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:54:40.616 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:54:40.617 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:55:40.966 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 07:55:40.966 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 784.6s
+2025-05-24 07:55:40.967 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 178
+2025-05-24 07:55:40.967 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 07:55:40.968 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 07:55:40.968 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 07:55:40.969 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 84.0 KB
+2025-05-24 07:55:40.969 | INFO     | __main__:monitor_positions:285 - Posição atual: 84.0 KB (100.0%)
+2025-05-24 07:56:10.703 | INFO     | __main__:handle_shutdown:29 - Sinal de encerramento recebido (2)
+2025-05-24 08:00:40.283 | INFO     | __main__:monitor_positions:210 - Iniciando monitoramento de posições de carros para a sessão ID=232
+2025-05-24 08:00:40.283 | INFO     | __main__:monitor_positions:211 - Arquivo de entrada: f1_data.txt
+2025-05-24 08:00:40.694 | INFO     | __main__:connect:69 - Conexão com o banco de dados estabelecida para session_id=232
+2025-05-24 08:00:40.785 | INFO     | __main__:connect:79 - Sessão encontrada: ID=232, Name=Practice 3, Type=Practice
+2025-05-24 08:01:41.005 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:01:41.007 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 60.2s
+2025-05-24 08:01:41.010 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 1813
+2025-05-24 08:01:41.011 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:01:41.012 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:01:41.013 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:01:41.015 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 747.9 KB
+2025-05-24 08:01:41.016 | INFO     | __main__:monitor_positions:285 - Posição atual: 747.9 KB (100.0%)
+2025-05-24 08:02:41.210 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:02:41.211 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 120.4s
+2025-05-24 08:02:41.211 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 2174
+2025-05-24 08:02:41.212 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:02:41.212 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:02:41.212 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:02:41.212 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 899.6 KB
+2025-05-24 08:02:41.213 | INFO     | __main__:monitor_positions:285 - Posição atual: 899.6 KB (100.0%)
+2025-05-24 08:03:41.241 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:03:41.242 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 180.5s
+2025-05-24 08:03:41.242 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 2489
+2025-05-24 08:03:41.242 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:03:41.243 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:03:41.243 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:03:41.243 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1027.4 KB
+2025-05-24 08:03:41.244 | INFO     | __main__:monitor_positions:285 - Posição atual: 1027.4 KB (100.0%)
+2025-05-24 08:04:41.429 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:04:41.429 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 240.6s
+2025-05-24 08:04:41.430 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 2801
+2025-05-24 08:04:41.430 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:04:41.431 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:04:41.431 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:04:41.432 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1149.6 KB
+2025-05-24 08:04:41.432 | INFO     | __main__:monitor_positions:285 - Posição atual: 1149.6 KB (100.0%)
+2025-05-24 08:05:41.493 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:05:41.495 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 300.7s
+2025-05-24 08:05:41.496 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 3022
+2025-05-24 08:05:41.498 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:05:41.499 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:05:41.500 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:05:41.502 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1243.1 KB
+2025-05-24 08:05:41.503 | INFO     | __main__:monitor_positions:285 - Posição atual: 1243.1 KB (100.0%)
+2025-05-24 08:06:41.699 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:06:41.699 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 360.9s
+2025-05-24 08:06:41.701 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 3264
+2025-05-24 08:06:41.702 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:06:41.704 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:06:41.705 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:06:41.706 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1342.6 KB
+2025-05-24 08:06:41.707 | INFO     | __main__:monitor_positions:285 - Posição atual: 1342.6 KB (100.0%)
+2025-05-24 08:07:41.886 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:07:41.886 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 421.1s
+2025-05-24 08:07:41.887 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 3499
+2025-05-24 08:07:41.887 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:07:41.888 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:07:41.888 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:07:41.889 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1438.7 KB
+2025-05-24 08:07:41.889 | INFO     | __main__:monitor_positions:285 - Posição atual: 1438.7 KB (100.0%)
+2025-05-24 08:08:42.035 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:08:42.035 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 481.2s
+2025-05-24 08:08:42.036 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 3719
+2025-05-24 08:08:42.036 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:08:42.036 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:08:42.037 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:08:42.037 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1529.0 KB
+2025-05-24 08:08:42.037 | INFO     | __main__:monitor_positions:285 - Posição atual: 1529.0 KB (100.0%)
+2025-05-24 08:09:42.041 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:09:42.041 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 541.3s
+2025-05-24 08:09:42.042 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 3936
+2025-05-24 08:09:42.042 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:09:42.042 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:09:42.043 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:09:42.043 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1619.9 KB
+2025-05-24 08:09:42.043 | INFO     | __main__:monitor_positions:285 - Posição atual: 1619.9 KB (100.0%)
+2025-05-24 08:10:42.474 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:10:42.478 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 601.7s
+2025-05-24 08:10:42.480 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 4177
+2025-05-24 08:10:42.482 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:10:42.483 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:10:42.484 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:10:42.484 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1724.3 KB
+2025-05-24 08:10:42.485 | INFO     | __main__:monitor_positions:285 - Posição atual: 1724.3 KB (100.0%)
+2025-05-24 08:11:42.523 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:11:42.523 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 661.7s
+2025-05-24 08:11:42.524 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 4489
+2025-05-24 08:11:42.524 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:11:42.525 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:11:42.525 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:11:42.526 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1851.6 KB
+2025-05-24 08:11:42.526 | INFO     | __main__:monitor_positions:285 - Posição atual: 1851.6 KB (100.0%)
+2025-05-24 08:12:42.659 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:12:42.661 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 721.9s
+2025-05-24 08:12:42.661 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 4845
+2025-05-24 08:12:42.662 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:12:42.662 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:12:42.662 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:12:42.663 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1993.9 KB
+2025-05-24 08:12:42.663 | INFO     | __main__:monitor_positions:285 - Posição atual: 1993.9 KB (100.0%)
+2025-05-24 08:13:42.891 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:13:42.891 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 782.1s
+2025-05-24 08:13:42.892 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 5201
+2025-05-24 08:13:42.892 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:13:42.892 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:13:42.893 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:13:42.893 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2143.3 KB
+2025-05-24 08:13:42.894 | INFO     | __main__:monitor_positions:285 - Posição atual: 2143.3 KB (100.0%)
+2025-05-24 08:14:43.079 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:14:43.080 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 842.3s
+2025-05-24 08:14:43.081 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 5585
+2025-05-24 08:14:43.082 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:14:43.082 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:14:43.083 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:14:43.084 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2303.4 KB
+2025-05-24 08:14:43.084 | INFO     | __main__:monitor_positions:285 - Posição atual: 2303.4 KB (100.0%)
+2025-05-24 08:15:43.561 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:15:43.562 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 902.8s
+2025-05-24 08:15:43.562 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 5997
+2025-05-24 08:15:43.562 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:15:43.563 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:15:43.563 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:15:43.563 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2478.9 KB
+2025-05-24 08:15:43.564 | INFO     | __main__:monitor_positions:285 - Posição atual: 2478.9 KB (100.0%)
+2025-05-24 08:16:43.596 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:16:43.597 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 962.8s
+2025-05-24 08:16:43.598 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 6464
+2025-05-24 08:16:43.598 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:16:43.599 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:16:43.600 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:16:43.601 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2666.8 KB
+2025-05-24 08:16:43.601 | INFO     | __main__:monitor_positions:285 - Posição atual: 2666.8 KB (100.0%)
+2025-05-24 08:17:43.797 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:17:43.798 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1023.0s
+2025-05-24 08:17:43.798 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 6961
+2025-05-24 08:17:43.798 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:17:43.799 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:17:43.799 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:17:43.799 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2868.0 KB
+2025-05-24 08:17:43.800 | INFO     | __main__:monitor_positions:285 - Posição atual: 2868.0 KB (100.0%)
+2025-05-24 08:18:44.136 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:18:44.136 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1083.3s
+2025-05-24 08:18:44.136 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 7457
+2025-05-24 08:18:44.137 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:18:44.137 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:18:44.138 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:18:44.138 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3069.7 KB
+2025-05-24 08:18:44.138 | INFO     | __main__:monitor_positions:285 - Posição atual: 3069.7 KB (100.0%)
+2025-05-24 08:19:44.447 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:19:44.449 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1143.7s
+2025-05-24 08:19:44.449 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 7903
+2025-05-24 08:19:44.450 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:19:44.450 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:19:44.450 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:19:44.451 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3250.1 KB
+2025-05-24 08:19:44.451 | INFO     | __main__:monitor_positions:285 - Posição atual: 3250.1 KB (100.0%)
+2025-05-24 08:20:44.606 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:20:44.607 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1203.8s
+2025-05-24 08:20:44.607 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 8347
+2025-05-24 08:20:44.607 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:20:44.608 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:20:44.608 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:20:44.608 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3434.0 KB
+2025-05-24 08:20:44.608 | INFO     | __main__:monitor_positions:285 - Posição atual: 3434.0 KB (100.0%)
+2025-05-24 08:21:44.747 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:21:44.749 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1264.0s
+2025-05-24 08:21:44.750 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 8784
+2025-05-24 08:21:44.752 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:21:44.754 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:21:44.757 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:21:44.762 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3622.5 KB
+2025-05-24 08:21:44.764 | INFO     | __main__:monitor_positions:285 - Posição atual: 3622.5 KB (100.0%)
+2025-05-24 08:22:44.860 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:22:44.861 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1324.1s
+2025-05-24 08:22:44.861 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 9265
+2025-05-24 08:22:44.862 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:22:44.862 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:22:44.862 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:22:44.863 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3816.6 KB
+2025-05-24 08:22:44.863 | INFO     | __main__:monitor_positions:285 - Posição atual: 3816.6 KB (100.0%)
+2025-05-24 08:23:45.101 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:23:45.101 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1384.3s
+2025-05-24 08:23:45.102 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 9720
+2025-05-24 08:23:45.102 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:23:45.103 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:23:45.103 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:23:45.103 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4004.6 KB
+2025-05-24 08:23:45.104 | INFO     | __main__:monitor_positions:285 - Posição atual: 4004.7 KB (100.0%)
+2025-05-24 08:24:45.369 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:24:45.370 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1444.6s
+2025-05-24 08:24:45.371 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 10189
+2025-05-24 08:24:45.372 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:24:45.372 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:24:45.373 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:24:45.374 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4193.7 KB
+2025-05-24 08:24:45.375 | INFO     | __main__:monitor_positions:285 - Posição atual: 4193.7 KB (100.0%)
+2025-05-24 08:25:45.594 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:25:45.595 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1504.8s
+2025-05-24 08:25:45.595 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 10632
+2025-05-24 08:25:45.596 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:25:45.596 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:25:45.596 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:25:45.597 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4377.8 KB
+2025-05-24 08:25:45.597 | INFO     | __main__:monitor_positions:285 - Posição atual: 4377.8 KB (100.0%)
+2025-05-24 08:26:45.877 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:26:45.878 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1565.1s
+2025-05-24 08:26:45.878 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11089
+2025-05-24 08:26:45.878 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:26:45.879 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:26:45.879 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:26:45.879 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4565.2 KB
+2025-05-24 08:26:45.880 | INFO     | __main__:monitor_positions:285 - Posição atual: 4565.2 KB (100.0%)
+2025-05-24 08:27:45.986 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:27:45.986 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1625.2s
+2025-05-24 08:27:45.987 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11511
+2025-05-24 08:27:45.987 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:27:45.988 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:27:45.988 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:27:45.988 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4743.3 KB
+2025-05-24 08:27:45.989 | INFO     | __main__:monitor_positions:285 - Posição atual: 4743.3 KB (100.0%)
+2025-05-24 08:28:46.108 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:28:46.108 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1685.3s
+2025-05-24 08:28:46.108 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11839
+2025-05-24 08:28:46.109 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:28:46.109 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:28:46.109 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:28:46.110 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4898.2 KB
+2025-05-24 08:28:46.110 | INFO     | __main__:monitor_positions:285 - Posição atual: 4898.2 KB (100.0%)
+2025-05-24 08:29:46.121 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:29:46.122 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1745.3s
+2025-05-24 08:29:46.122 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12077
+2025-05-24 08:29:46.122 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:29:46.123 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:29:46.123 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:29:46.123 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5011.5 KB
+2025-05-24 08:29:46.123 | INFO     | __main__:monitor_positions:285 - Posição atual: 5011.5 KB (100.0%)
+2025-05-24 08:30:46.562 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:30:46.562 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1805.8s
+2025-05-24 08:30:46.563 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12219
+2025-05-24 08:30:46.563 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:30:46.563 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:30:46.564 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:30:46.564 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5076.0 KB
+2025-05-24 08:30:46.565 | INFO     | __main__:monitor_positions:285 - Posição atual: 5076.0 KB (100.0%)
+2025-05-24 08:31:46.912 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:31:46.913 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1866.1s
+2025-05-24 08:31:46.913 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12219
+2025-05-24 08:31:46.914 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:31:46.915 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:31:46.915 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:31:46.915 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5076.0 KB
+2025-05-24 08:31:46.917 | INFO     | __main__:monitor_positions:285 - Posição atual: 5076.0 KB (100.0%)
+2025-05-24 08:32:47.310 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:32:47.310 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1926.5s
+2025-05-24 08:32:47.311 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12219
+2025-05-24 08:32:47.311 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:32:47.312 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:32:47.312 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:32:47.313 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5076.0 KB
+2025-05-24 08:32:47.313 | INFO     | __main__:monitor_positions:285 - Posição atual: 5076.0 KB (100.0%)
+2025-05-24 08:33:47.731 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:33:47.732 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1986.9s
+2025-05-24 08:33:47.732 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12221
+2025-05-24 08:33:47.733 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:33:47.733 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:33:47.734 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:33:47.734 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5076.4 KB
+2025-05-24 08:33:47.735 | INFO     | __main__:monitor_positions:285 - Posição atual: 5076.4 KB (100.0%)
+2025-05-24 08:34:48.100 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:34:48.100 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2047.3s
+2025-05-24 08:34:48.101 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12222
+2025-05-24 08:34:48.101 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:34:48.102 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:34:48.102 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:34:48.103 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5076.6 KB
+2025-05-24 08:34:48.103 | INFO     | __main__:monitor_positions:285 - Posição atual: 5076.6 KB (100.0%)
+2025-05-24 08:35:48.472 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:35:48.474 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2107.7s
+2025-05-24 08:35:48.475 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:35:48.476 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:35:48.478 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:35:48.482 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:35:48.484 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:35:48.487 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:36:48.851 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:36:48.851 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2168.1s
+2025-05-24 08:36:48.852 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:36:48.852 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:36:48.853 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:36:48.853 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:36:48.854 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:36:48.856 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:37:49.247 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:37:49.248 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2228.5s
+2025-05-24 08:37:49.248 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:37:49.248 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:37:49.249 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:37:49.249 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:37:49.249 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:37:49.250 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:38:49.684 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:38:49.684 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2288.9s
+2025-05-24 08:38:49.685 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:38:49.685 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:38:49.685 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:38:49.685 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:38:49.687 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:38:49.687 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:39:50.050 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:39:50.051 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2349.3s
+2025-05-24 08:39:50.051 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:39:50.051 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:39:50.052 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:39:50.052 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:39:50.052 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:39:50.053 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:40:50.374 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:40:50.374 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2409.6s
+2025-05-24 08:40:50.375 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:40:50.375 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:40:50.376 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:40:50.376 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:40:50.376 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:40:50.377 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:41:50.697 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:41:50.698 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2469.9s
+2025-05-24 08:41:50.699 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:41:50.700 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:41:50.701 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:41:50.702 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:41:50.702 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:41:50.703 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:42:51.109 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:42:51.109 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2530.3s
+2025-05-24 08:42:51.110 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:42:51.110 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:42:51.111 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:42:51.111 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:42:51.112 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:42:51.112 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:43:51.490 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:43:51.491 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2590.7s
+2025-05-24 08:43:51.491 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:43:51.491 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:43:51.492 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:43:51.492 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:43:51.493 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:43:51.493 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:44:51.826 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:44:51.827 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2651.0s
+2025-05-24 08:44:51.828 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:44:51.829 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:44:51.829 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:44:51.830 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:44:51.831 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:44:51.832 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:45:52.256 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:45:52.257 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2711.5s
+2025-05-24 08:45:52.257 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:45:52.257 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:45:52.258 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:45:52.258 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:45:52.258 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:45:52.259 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:46:52.601 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:46:52.601 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2771.8s
+2025-05-24 08:46:52.602 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:46:52.602 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:46:52.602 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:46:52.603 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:46:52.603 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:46:52.603 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:47:52.906 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:47:52.908 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2832.1s
+2025-05-24 08:47:52.909 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:47:52.910 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:47:52.911 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:47:52.912 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:47:52.913 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:47:52.914 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:48:53.263 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:48:53.263 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2892.5s
+2025-05-24 08:48:53.264 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:48:53.264 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:48:53.264 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:48:53.265 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:48:53.265 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:48:53.265 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:49:53.604 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:49:53.604 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2952.8s
+2025-05-24 08:49:53.605 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:49:53.605 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:49:53.605 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:49:53.606 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:49:53.606 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:49:53.606 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:50:53.896 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:50:53.896 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3013.1s
+2025-05-24 08:50:53.897 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:50:53.897 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:50:53.897 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:50:53.898 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:50:53.898 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:50:53.898 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:51:54.265 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:51:54.265 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3073.5s
+2025-05-24 08:51:54.266 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12224
+2025-05-24 08:51:54.266 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:51:54.266 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:51:54.267 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:51:54.267 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.1 KB
+2025-05-24 08:51:54.268 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.1 KB (100.0%)
+2025-05-24 08:52:54.697 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:52:54.697 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3133.9s
+2025-05-24 08:52:54.698 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12225
+2025-05-24 08:52:54.698 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:52:54.698 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:52:54.699 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:52:54.699 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.7 KB
+2025-05-24 08:52:54.699 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.7 KB (100.0%)
+2025-05-24 08:53:55.062 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:53:55.064 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3194.3s
+2025-05-24 08:53:55.066 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12225
+2025-05-24 08:53:55.067 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:53:55.069 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:53:55.070 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:53:55.073 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.7 KB
+2025-05-24 08:53:55.074 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.7 KB (100.0%)
+2025-05-24 08:54:55.452 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:54:55.454 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3254.7s
+2025-05-24 08:54:55.455 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12225
+2025-05-24 08:54:55.457 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:54:55.458 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:54:55.460 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:54:55.462 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.7 KB
+2025-05-24 08:54:55.464 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.7 KB (100.0%)
+2025-05-24 08:55:55.817 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:55:55.818 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3315.0s
+2025-05-24 08:55:55.819 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12225
+2025-05-24 08:55:55.820 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:55:55.821 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:55:55.822 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:55:55.822 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.7 KB
+2025-05-24 08:55:55.823 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.7 KB (100.0%)
+2025-05-24 08:56:56.198 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:56:56.198 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3375.4s
+2025-05-24 08:56:56.199 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12225
+2025-05-24 08:56:56.199 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:56:56.199 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:56:56.199 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:56:56.199 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.7 KB
+2025-05-24 08:56:56.201 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.7 KB (100.0%)
+2025-05-24 08:57:56.607 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:57:56.609 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3435.8s
+2025-05-24 08:57:56.610 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12225
+2025-05-24 08:57:56.611 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:57:56.618 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:57:56.625 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:57:56.629 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.7 KB
+2025-05-24 08:57:56.629 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.7 KB (100.0%)
+2025-05-24 08:58:56.971 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 08:58:56.971 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3496.2s
+2025-05-24 08:58:56.972 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 12225
+2025-05-24 08:58:56.972 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 08:58:56.972 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 08:58:56.972 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 08:58:56.973 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 5077.7 KB
+2025-05-24 08:58:56.973 | INFO     | __main__:monitor_positions:285 - Posição atual: 5077.7 KB (100.0%)
+2025-05-24 08:59:51.843 | INFO     | __main__:handle_shutdown:29 - Sinal de encerramento recebido (2)
+2025-05-24 08:59:52.048 | INFO     | __main__:handle_shutdown:29 - Sinal de encerramento recebido (2)
+2025-05-24 08:59:52.109 | INFO     | __main__:monitor_positions:302 - === Relatório Final ===
+2025-05-24 08:59:52.109 | INFO     | __main__:monitor_positions:303 - Tempo total: 3551.3s
+2025-05-24 08:59:52.110 | INFO     | __main__:monitor_positions:304 - Linhas processadas: 12225
+2025-05-24 08:59:52.110 | INFO     | __main__:monitor_positions:305 - Posições encontradas: 0
+2025-05-24 08:59:52.110 | INFO     | __main__:monitor_positions:306 - Posições inseridas: 0
+2025-05-24 08:59:52.111 | INFO     | __main__:monitor_positions:307 - Pilotos rastreados: 0
+2025-05-24 08:59:52.166 | INFO     | __main__:close:172 - Conexão com o banco de dados fechada
+2025-05-24 08:59:52.167 | INFO     | __main__:monitor_positions:316 - Monitoramento encerrado
+2025-05-24 09:31:14.520 | INFO     | __main__:monitor_positions:210 - Iniciando monitoramento de posições de carros para a sessão ID=233
+2025-05-24 09:31:14.520 | INFO     | __main__:monitor_positions:211 - Arquivo de entrada: f1_data.txt
+2025-05-24 09:31:14.942 | INFO     | __main__:connect:69 - Conexão com o banco de dados estabelecida para session_id=233
+2025-05-24 09:31:15.032 | INFO     | __main__:connect:79 - Sessão encontrada: ID=233, Name=Qualifying, Type=Qualifying
+2025-05-24 09:32:15.408 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:32:15.408 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 60.4s
+2025-05-24 09:32:15.408 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:32:15.408 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:32:15.409 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:32:15.409 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:33:15.855 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:33:15.856 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 120.8s
+2025-05-24 09:33:15.858 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:33:15.860 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:33:15.861 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:33:15.863 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:34:16.279 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:34:16.281 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 181.2s
+2025-05-24 09:34:16.282 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:34:16.284 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:34:16.286 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:34:16.288 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:35:16.670 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:35:16.671 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 241.6s
+2025-05-24 09:35:16.673 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:35:16.674 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:35:16.676 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:35:16.677 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:36:17.084 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:36:17.086 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 302.1s
+2025-05-24 09:36:17.088 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:36:17.089 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:36:17.089 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:36:17.090 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:37:17.505 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:37:17.506 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 362.5s
+2025-05-24 09:37:17.508 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:37:17.509 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:37:17.511 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:37:17.513 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:38:17.973 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:38:17.975 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 422.9s
+2025-05-24 09:38:17.976 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:38:17.978 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:38:17.979 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:38:17.980 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:39:18.419 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:39:18.419 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 483.4s
+2025-05-24 09:39:18.420 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:39:18.421 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:39:18.422 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:39:18.422 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:40:18.791 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:40:18.791 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 543.8s
+2025-05-24 09:40:18.792 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:40:18.792 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:40:18.793 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:40:18.793 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:41:19.277 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:41:19.279 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 604.2s
+2025-05-24 09:41:19.280 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:41:19.282 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:41:19.284 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:41:19.284 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:42:19.688 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:42:19.690 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 664.7s
+2025-05-24 09:42:19.691 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:42:19.693 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:42:19.695 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:42:19.697 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:43:20.134 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:43:20.136 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 725.1s
+2025-05-24 09:43:20.137 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:43:20.139 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:43:20.141 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:43:20.142 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:44:20.621 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:44:20.622 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 785.6s
+2025-05-24 09:44:20.623 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:44:20.623 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:44:20.624 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:44:20.625 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:45:21.083 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:45:21.083 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 846.0s
+2025-05-24 09:45:21.083 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:45:21.083 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:45:21.084 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:45:21.084 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:46:21.449 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:46:21.450 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 906.4s
+2025-05-24 09:46:21.450 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:46:21.450 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:46:21.451 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:46:21.451 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:47:21.454 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:47:21.454 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 966.4s
+2025-05-24 09:47:21.455 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:47:21.455 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:47:21.455 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:47:21.456 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:48:21.846 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:48:21.847 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1026.8s
+2025-05-24 09:48:21.849 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:48:21.851 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:48:21.851 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:48:21.851 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:49:22.301 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:49:22.302 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1087.3s
+2025-05-24 09:49:22.302 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:49:22.303 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:49:22.303 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:49:22.303 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:50:22.801 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:50:22.802 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1147.8s
+2025-05-24 09:50:22.804 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:50:22.806 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:50:22.808 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:50:22.810 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:51:23.245 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:51:23.246 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1208.2s
+2025-05-24 09:51:23.248 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:51:23.250 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:51:23.251 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:51:23.253 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:52:23.630 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:52:23.632 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1268.6s
+2025-05-24 09:52:23.633 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:52:23.635 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:52:23.636 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:52:23.638 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:53:24.018 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:53:24.019 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1329.0s
+2025-05-24 09:53:24.019 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:53:24.019 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:53:24.020 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:53:24.020 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:54:24.416 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:54:24.417 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1389.4s
+2025-05-24 09:54:24.417 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:54:24.418 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:54:24.418 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:54:24.419 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:55:24.815 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:55:24.817 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1449.8s
+2025-05-24 09:55:24.819 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:55:24.820 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:55:24.822 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:55:24.824 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:56:25.223 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:56:25.225 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1510.2s
+2025-05-24 09:56:25.226 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:56:25.228 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:56:25.230 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:56:25.232 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:57:25.602 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:57:25.604 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1570.6s
+2025-05-24 09:57:25.605 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:57:25.606 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:57:25.607 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:57:25.607 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:58:26.005 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:58:26.006 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1631.0s
+2025-05-24 09:58:26.007 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:58:26.007 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:58:26.007 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:58:26.008 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 09:59:26.415 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 09:59:26.416 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1691.4s
+2025-05-24 09:59:26.416 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 09:59:26.416 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 09:59:26.417 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 09:59:26.417 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:00:26.875 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:00:26.877 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1751.8s
+2025-05-24 10:00:26.878 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:00:26.880 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:00:26.882 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:00:26.884 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:01:27.278 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:01:27.280 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1812.2s
+2025-05-24 10:01:27.281 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:01:27.283 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:01:27.285 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:01:27.287 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:02:27.654 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:02:27.654 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1872.6s
+2025-05-24 10:02:27.655 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:02:27.655 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:02:27.656 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:02:27.656 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:03:28.043 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:03:28.044 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1933.0s
+2025-05-24 10:03:28.044 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:03:28.045 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:03:28.045 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:03:28.045 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:04:28.461 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:04:28.461 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 1993.4s
+2025-05-24 10:04:28.461 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:04:28.461 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:04:28.462 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:04:28.462 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:05:28.881 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:05:28.882 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2053.8s
+2025-05-24 10:05:28.884 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:05:28.885 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:05:28.886 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:05:28.887 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:06:29.250 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:06:29.251 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2114.2s
+2025-05-24 10:06:29.253 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:06:29.254 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:06:29.256 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:06:29.257 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:07:29.624 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:07:29.626 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2174.6s
+2025-05-24 10:07:29.627 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:07:29.629 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:07:29.631 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:07:29.632 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:08:30.045 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:08:30.045 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2235.0s
+2025-05-24 10:08:30.045 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:08:30.045 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:08:30.046 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:08:30.046 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:09:30.495 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:09:30.496 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2295.5s
+2025-05-24 10:09:30.497 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:09:30.497 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:09:30.498 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:09:30.499 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:10:30.951 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:10:30.952 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2355.9s
+2025-05-24 10:10:30.954 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:10:30.955 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:10:30.957 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:10:30.957 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:11:31.417 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:11:31.419 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2416.4s
+2025-05-24 10:11:31.420 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:11:31.422 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:11:31.424 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:11:31.425 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:12:31.916 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:12:31.918 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2476.9s
+2025-05-24 10:12:31.919 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:12:31.921 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:12:31.922 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:12:31.923 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:13:32.327 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:13:32.328 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2537.3s
+2025-05-24 10:13:32.329 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:13:32.330 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:13:32.331 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:13:32.331 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:14:32.698 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:14:32.700 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2597.7s
+2025-05-24 10:14:32.701 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:14:32.703 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:14:32.705 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:14:32.707 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:15:33.136 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:15:33.136 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2658.1s
+2025-05-24 10:15:33.137 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:15:33.137 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:15:33.137 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:15:33.138 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:16:33.470 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:16:33.471 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2718.4s
+2025-05-24 10:16:33.473 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:16:33.475 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:16:33.476 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:16:33.478 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:17:33.847 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:17:33.849 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2778.8s
+2025-05-24 10:17:33.851 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:17:33.852 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:17:33.854 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:17:33.855 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:18:34.298 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:18:34.300 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2839.3s
+2025-05-24 10:18:34.301 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:18:34.303 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:18:34.305 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:18:34.306 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:19:34.681 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:19:34.683 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2899.6s
+2025-05-24 10:19:34.684 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:19:34.686 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:19:34.687 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:19:34.689 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:20:35.029 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:20:35.029 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 2960.0s
+2025-05-24 10:20:35.030 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:20:35.030 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:20:35.030 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:20:35.031 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:21:35.344 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:21:35.345 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3020.3s
+2025-05-24 10:21:35.345 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:21:35.346 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:21:35.346 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:21:35.347 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:22:35.682 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:22:35.684 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3080.6s
+2025-05-24 10:22:35.686 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:22:35.687 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:22:35.689 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:22:35.690 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:23:36.070 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:23:36.070 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3141.0s
+2025-05-24 10:23:36.071 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:23:36.071 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:23:36.072 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:23:36.072 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:24:36.513 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:24:36.513 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3201.5s
+2025-05-24 10:24:36.514 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:24:36.514 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:24:36.514 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:24:36.515 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:25:36.947 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:25:36.949 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3261.9s
+2025-05-24 10:25:36.950 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:25:36.951 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:25:36.953 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:25:36.954 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:26:37.357 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:26:37.359 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3322.3s
+2025-05-24 10:26:37.361 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:26:37.362 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:26:37.364 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:26:37.365 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:27:37.765 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:27:37.767 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3382.7s
+2025-05-24 10:27:37.768 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:27:37.769 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:27:37.770 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:27:37.772 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:28:38.143 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:28:38.144 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3443.1s
+2025-05-24 10:28:38.146 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:28:38.148 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:28:38.149 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:28:38.151 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:29:38.411 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:29:38.411 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3503.4s
+2025-05-24 10:29:38.412 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:29:38.413 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:29:38.414 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:29:38.415 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:30:38.798 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:30:38.798 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3563.8s
+2025-05-24 10:30:38.799 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:30:38.799 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:30:38.799 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:30:38.800 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:31:39.158 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:31:39.160 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3624.1s
+2025-05-24 10:31:39.162 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:31:39.163 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:31:39.165 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:31:39.167 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:32:39.557 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:32:39.558 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3684.5s
+2025-05-24 10:32:39.560 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:32:39.562 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:32:39.563 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:32:39.565 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:33:39.858 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:33:39.860 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3744.8s
+2025-05-24 10:33:39.862 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:33:39.863 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:33:39.865 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:33:39.866 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:34:40.175 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:34:40.177 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3805.1s
+2025-05-24 10:34:40.178 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:34:40.180 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:34:40.181 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:34:40.182 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:35:40.541 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:35:40.542 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3865.5s
+2025-05-24 10:35:40.543 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:35:40.544 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:35:40.545 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:35:40.546 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:36:40.898 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:36:40.900 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3925.9s
+2025-05-24 10:36:40.902 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:36:40.903 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:36:40.905 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:36:40.907 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:37:41.122 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:37:41.124 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 3986.1s
+2025-05-24 10:37:41.125 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:37:41.127 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:37:41.128 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:37:41.130 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:38:41.398 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:38:41.398 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4046.4s
+2025-05-24 10:38:41.398 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:38:41.398 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:38:41.399 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:38:41.399 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:39:41.700 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:39:41.701 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4106.7s
+2025-05-24 10:39:41.703 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:39:41.704 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:39:41.706 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:39:41.708 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:40:42.132 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:40:42.134 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4167.1s
+2025-05-24 10:40:42.136 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:40:42.137 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:40:42.139 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:40:42.141 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:41:42.538 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:41:42.540 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4227.5s
+2025-05-24 10:41:42.542 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:41:42.543 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:41:42.543 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:41:42.543 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:42:42.801 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:42:42.801 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4287.8s
+2025-05-24 10:42:42.802 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:42:42.802 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:42:42.803 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:42:42.803 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:43:43.235 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:43:43.236 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4348.2s
+2025-05-24 10:43:43.238 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:43:43.239 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:43:43.240 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:43:43.241 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:44:43.618 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:44:43.620 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4408.6s
+2025-05-24 10:44:43.621 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 0
+2025-05-24 10:44:43.623 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:44:43.624 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:44:43.626 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:45:43.942 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:45:43.944 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4468.9s
+2025-05-24 10:45:43.946 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 9
+2025-05-24 10:45:43.947 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:45:43.949 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:45:43.951 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:45:43.953 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 43.6 KB
+2025-05-24 10:45:43.954 | INFO     | __main__:monitor_positions:285 - Posição atual: 43.6 KB (100.0%)
+2025-05-24 10:46:44.265 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:46:44.266 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4529.2s
+2025-05-24 10:46:44.268 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 10
+2025-05-24 10:46:44.269 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:46:44.271 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:46:44.272 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:46:44.274 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 43.8 KB
+2025-05-24 10:46:44.276 | INFO     | __main__:monitor_positions:285 - Posição atual: 43.8 KB (100.0%)
+2025-05-24 10:47:44.266 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:47:44.268 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4589.2s
+2025-05-24 10:47:44.270 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 24
+2025-05-24 10:47:44.271 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:47:44.273 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:47:44.275 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:47:44.276 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 48.2 KB
+2025-05-24 10:47:44.278 | INFO     | __main__:monitor_positions:285 - Posição atual: 48.2 KB (100.0%)
+2025-05-24 10:48:44.760 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:48:44.761 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4649.7s
+2025-05-24 10:48:44.761 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 117
+2025-05-24 10:48:44.762 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:48:44.762 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:48:44.763 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:48:44.763 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 79.3 KB
+2025-05-24 10:48:44.763 | INFO     | __main__:monitor_positions:285 - Posição atual: 79.3 KB (100.0%)
+2025-05-24 10:49:44.795 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:49:44.796 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4709.8s
+2025-05-24 10:49:44.796 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 238
+2025-05-24 10:49:44.797 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:49:44.797 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:49:44.797 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:49:44.798 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 121.9 KB
+2025-05-24 10:49:44.798 | INFO     | __main__:monitor_positions:285 - Posição atual: 121.9 KB (100.0%)
+2025-05-24 10:50:44.878 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:50:44.879 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4769.8s
+2025-05-24 10:50:44.879 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 359
+2025-05-24 10:50:44.880 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:50:44.880 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:50:44.880 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:50:44.881 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 166.2 KB
+2025-05-24 10:50:44.881 | INFO     | __main__:monitor_positions:285 - Posição atual: 166.2 KB (100.0%)
+2025-05-24 10:51:44.909 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:51:44.910 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4829.9s
+2025-05-24 10:51:44.910 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 478
+2025-05-24 10:51:44.911 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:51:44.911 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:51:44.912 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:51:44.912 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 209.7 KB
+2025-05-24 10:51:44.912 | INFO     | __main__:monitor_positions:285 - Posição atual: 209.7 KB (100.0%)
+2025-05-24 10:52:45.043 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:52:45.044 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4890.0s
+2025-05-24 10:52:45.046 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 599
+2025-05-24 10:52:45.047 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:52:45.049 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:52:45.050 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:52:45.052 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 253.1 KB
+2025-05-24 10:52:45.053 | INFO     | __main__:monitor_positions:285 - Posição atual: 253.1 KB (100.0%)
+2025-05-24 10:53:45.122 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:53:45.123 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 4950.1s
+2025-05-24 10:53:45.123 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 720
+2025-05-24 10:53:45.123 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:53:45.124 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:53:45.124 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:53:45.124 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 296.9 KB
+2025-05-24 10:53:45.126 | INFO     | __main__:monitor_positions:285 - Posição atual: 296.9 KB (100.0%)
+2025-05-24 10:54:45.175 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:54:45.176 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5010.1s
+2025-05-24 10:54:45.176 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 841
+2025-05-24 10:54:45.177 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:54:45.177 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:54:45.177 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:54:45.178 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 350.7 KB
+2025-05-24 10:54:45.178 | INFO     | __main__:monitor_positions:285 - Posição atual: 350.7 KB (100.0%)
+2025-05-24 10:55:45.383 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:55:45.385 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5070.3s
+2025-05-24 10:55:45.386 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 962
+2025-05-24 10:55:45.387 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:55:45.389 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:55:45.391 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:55:45.392 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 400.7 KB
+2025-05-24 10:55:45.393 | INFO     | __main__:monitor_positions:285 - Posição atual: 400.7 KB (100.0%)
+2025-05-24 10:56:45.502 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:56:45.504 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5130.5s
+2025-05-24 10:56:45.505 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 1083
+2025-05-24 10:56:45.507 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:56:45.508 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:56:45.510 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:56:45.512 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 451.1 KB
+2025-05-24 10:56:45.513 | INFO     | __main__:monitor_positions:285 - Posição atual: 451.1 KB (100.0%)
+2025-05-24 10:57:45.637 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:57:45.639 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5190.6s
+2025-05-24 10:57:45.641 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 1201
+2025-05-24 10:57:45.642 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:57:45.644 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:57:45.645 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:57:45.647 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 499.0 KB
+2025-05-24 10:57:45.648 | INFO     | __main__:monitor_positions:285 - Posição atual: 499.0 KB (100.0%)
+2025-05-24 10:58:45.658 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:58:45.660 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5250.6s
+2025-05-24 10:58:45.661 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 1322
+2025-05-24 10:58:45.661 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:58:45.662 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:58:45.662 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:58:45.663 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 549.5 KB
+2025-05-24 10:58:45.663 | INFO     | __main__:monitor_positions:285 - Posição atual: 549.5 KB (100.0%)
+2025-05-24 10:59:45.683 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 10:59:45.683 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5310.6s
+2025-05-24 10:59:45.684 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 1443
+2025-05-24 10:59:45.684 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 10:59:45.685 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 10:59:45.685 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 10:59:45.685 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 605.0 KB
+2025-05-24 10:59:45.686 | INFO     | __main__:monitor_positions:285 - Posição atual: 605.0 KB (100.0%)
+2025-05-24 11:00:46.126 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:00:46.128 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5371.1s
+2025-05-24 11:00:46.129 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 1625
+2025-05-24 11:00:46.131 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:00:46.132 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:00:46.134 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:00:46.136 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 691.5 KB
+2025-05-24 11:00:46.137 | INFO     | __main__:monitor_positions:285 - Posição atual: 691.5 KB (100.0%)
+2025-05-24 11:01:46.515 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:01:46.516 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5431.5s
+2025-05-24 11:01:46.516 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 1969
+2025-05-24 11:01:46.517 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:01:46.518 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:01:46.518 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:01:46.519 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 837.4 KB
+2025-05-24 11:01:46.520 | INFO     | __main__:monitor_positions:285 - Posição atual: 837.4 KB (100.0%)
+2025-05-24 11:02:47.040 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:02:47.040 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5492.0s
+2025-05-24 11:02:47.040 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 2431
+2025-05-24 11:02:47.041 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:02:47.041 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:02:47.041 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:02:47.042 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1014.5 KB
+2025-05-24 11:02:47.042 | INFO     | __main__:monitor_positions:285 - Posição atual: 1018.0 KB (100.3%)
+2025-05-24 11:03:47.061 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:03:47.061 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5552.0s
+2025-05-24 11:03:47.061 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 2927
+2025-05-24 11:03:47.062 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:03:47.062 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:03:47.062 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:03:47.063 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1213.4 KB
+2025-05-24 11:03:47.063 | INFO     | __main__:monitor_positions:285 - Posição atual: 1213.4 KB (100.0%)
+2025-05-24 11:04:47.109 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:04:47.110 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5612.1s
+2025-05-24 11:04:47.110 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 3439
+2025-05-24 11:04:47.110 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:04:47.111 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:04:47.111 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:04:47.111 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1412.6 KB
+2025-05-24 11:04:47.112 | INFO     | __main__:monitor_positions:285 - Posição atual: 1412.6 KB (100.0%)
+2025-05-24 11:05:47.146 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:05:47.147 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5672.1s
+2025-05-24 11:05:47.147 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 3953
+2025-05-24 11:05:47.148 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:05:47.148 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:05:47.148 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:05:47.148 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1617.5 KB
+2025-05-24 11:05:47.149 | INFO     | __main__:monitor_positions:285 - Posição atual: 1617.5 KB (100.0%)
+2025-05-24 11:06:47.534 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:06:47.534 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5732.5s
+2025-05-24 11:06:47.535 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 4490
+2025-05-24 11:06:47.535 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:06:47.535 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:06:47.536 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:06:47.536 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 1839.8 KB
+2025-05-24 11:06:47.537 | INFO     | __main__:monitor_positions:285 - Posição atual: 1839.8 KB (100.0%)
+2025-05-24 11:07:47.878 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:07:47.878 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5792.8s
+2025-05-24 11:07:47.878 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 5001
+2025-05-24 11:07:47.879 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:07:47.879 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:07:47.879 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:07:47.880 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2047.7 KB
+2025-05-24 11:07:47.880 | INFO     | __main__:monitor_positions:285 - Posição atual: 2047.7 KB (100.0%)
+2025-05-24 11:08:48.356 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:08:48.357 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5853.3s
+2025-05-24 11:08:48.358 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 5524
+2025-05-24 11:08:48.358 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:08:48.359 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:08:48.360 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:08:48.360 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2255.9 KB
+2025-05-24 11:08:48.360 | INFO     | __main__:monitor_positions:285 - Posição atual: 2255.9 KB (100.0%)
+2025-05-24 11:09:48.833 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:09:48.834 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5913.8s
+2025-05-24 11:09:48.834 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 6045
+2025-05-24 11:09:48.835 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:09:48.835 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:09:48.836 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:09:48.836 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2462.9 KB
+2025-05-24 11:09:48.836 | INFO     | __main__:monitor_positions:285 - Posição atual: 2462.9 KB (100.0%)
+2025-05-24 11:10:48.921 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:10:48.921 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 5973.9s
+2025-05-24 11:10:48.922 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 6502
+2025-05-24 11:10:48.922 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:10:48.923 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:10:48.923 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:10:48.924 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2647.6 KB
+2025-05-24 11:10:48.924 | INFO     | __main__:monitor_positions:285 - Posição atual: 2647.6 KB (100.0%)
+2025-05-24 11:11:48.939 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:11:48.940 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6033.9s
+2025-05-24 11:11:48.940 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 6906
+2025-05-24 11:11:48.940 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:11:48.941 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:11:48.941 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:11:48.941 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 2812.0 KB
+2025-05-24 11:11:48.942 | INFO     | __main__:monitor_positions:285 - Posição atual: 2812.0 KB (100.0%)
+2025-05-24 11:12:48.940 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:12:48.942 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6093.9s
+2025-05-24 11:12:48.944 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 7357
+2025-05-24 11:12:48.946 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:12:48.947 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:12:48.948 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:12:48.949 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3000.5 KB
+2025-05-24 11:12:48.951 | INFO     | __main__:monitor_positions:285 - Posição atual: 3000.5 KB (100.0%)
+2025-05-24 11:13:48.989 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:13:48.989 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6154.0s
+2025-05-24 11:13:48.990 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 7856
+2025-05-24 11:13:48.990 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:13:48.990 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:13:48.991 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:13:48.991 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3189.3 KB
+2025-05-24 11:13:48.992 | INFO     | __main__:monitor_positions:285 - Posição atual: 3189.3 KB (100.0%)
+2025-05-24 11:14:49.010 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:14:49.011 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6214.0s
+2025-05-24 11:14:49.011 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 8384
+2025-05-24 11:14:49.011 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:14:49.012 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:14:49.012 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:14:49.012 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3400.6 KB
+2025-05-24 11:14:49.013 | INFO     | __main__:monitor_positions:285 - Posição atual: 3400.6 KB (100.0%)
+2025-05-24 11:15:49.210 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:15:49.210 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6274.2s
+2025-05-24 11:15:49.211 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 8884
+2025-05-24 11:15:49.211 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:15:49.211 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:15:49.212 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:15:49.212 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3596.7 KB
+2025-05-24 11:15:49.213 | INFO     | __main__:monitor_positions:285 - Posição atual: 3596.7 KB (100.0%)
+2025-05-24 11:16:49.251 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:16:49.252 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6334.2s
+2025-05-24 11:16:49.253 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 9364
+2025-05-24 11:16:49.254 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:16:49.254 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:16:49.255 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:16:49.256 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3792.4 KB
+2025-05-24 11:16:49.256 | INFO     | __main__:monitor_positions:285 - Posição atual: 3792.6 KB (100.0%)
+2025-05-24 11:17:49.499 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:17:49.500 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6394.5s
+2025-05-24 11:17:49.500 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 9861
+2025-05-24 11:17:49.501 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:17:49.502 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:17:49.502 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:17:49.503 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 3988.8 KB
+2025-05-24 11:17:49.504 | INFO     | __main__:monitor_positions:285 - Posição atual: 3988.8 KB (100.0%)
+2025-05-24 11:18:49.531 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:18:49.531 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6454.5s
+2025-05-24 11:18:49.532 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 10412
+2025-05-24 11:18:49.532 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:18:49.533 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:18:49.533 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:18:49.534 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4202.8 KB
+2025-05-24 11:18:49.534 | INFO     | __main__:monitor_positions:285 - Posição atual: 4202.8 KB (100.0%)
+2025-05-24 11:19:50.002 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:19:50.003 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6515.0s
+2025-05-24 11:19:50.003 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 10772
+2025-05-24 11:19:50.003 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:19:50.004 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:19:50.004 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:19:50.004 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4355.6 KB
+2025-05-24 11:19:50.005 | INFO     | __main__:monitor_positions:285 - Posição atual: 4355.6 KB (100.0%)
+2025-05-24 11:20:50.251 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:20:50.251 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6575.2s
+2025-05-24 11:20:50.251 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 10957
+2025-05-24 11:20:50.252 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:20:50.252 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:20:50.252 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:20:50.253 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4440.5 KB
+2025-05-24 11:20:50.253 | INFO     | __main__:monitor_positions:285 - Posição atual: 4440.5 KB (100.0%)
+2025-05-24 11:21:50.599 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:21:50.599 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6635.6s
+2025-05-24 11:21:50.600 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11079
+2025-05-24 11:21:50.600 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:21:50.600 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:21:50.601 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:21:50.601 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4496.8 KB
+2025-05-24 11:21:50.601 | INFO     | __main__:monitor_positions:285 - Posição atual: 4496.8 KB (100.0%)
+2025-05-24 11:22:50.946 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:22:50.948 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6695.9s
+2025-05-24 11:22:50.949 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11200
+2025-05-24 11:22:50.951 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:22:50.952 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:22:50.953 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:22:50.955 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4550.9 KB
+2025-05-24 11:22:50.957 | INFO     | __main__:monitor_positions:285 - Posição atual: 4550.9 KB (100.0%)
+2025-05-24 11:23:51.143 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:23:51.143 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6756.1s
+2025-05-24 11:23:51.144 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11322
+2025-05-24 11:23:51.144 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:23:51.145 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:23:51.145 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:23:51.146 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4605.0 KB
+2025-05-24 11:23:51.146 | INFO     | __main__:monitor_positions:285 - Posição atual: 4605.0 KB (100.0%)
+2025-05-24 11:24:51.385 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:24:51.386 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6816.4s
+2025-05-24 11:24:51.386 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11445
+2025-05-24 11:24:51.387 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:24:51.387 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:24:51.388 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:24:51.388 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4662.3 KB
+2025-05-24 11:24:51.389 | INFO     | __main__:monitor_positions:285 - Posição atual: 4662.3 KB (100.0%)
+2025-05-24 11:25:51.610 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:25:51.610 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6876.6s
+2025-05-24 11:25:51.611 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11568
+2025-05-24 11:25:51.611 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:25:51.612 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:25:51.612 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:25:51.612 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4733.7 KB
+2025-05-24 11:25:51.613 | INFO     | __main__:monitor_positions:285 - Posição atual: 4733.7 KB (100.0%)
+2025-05-24 11:26:51.800 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:26:51.801 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6936.8s
+2025-05-24 11:26:51.801 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11690
+2025-05-24 11:26:51.801 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:26:51.802 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:26:51.802 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:26:51.802 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4788.5 KB
+2025-05-24 11:26:51.802 | INFO     | __main__:monitor_positions:285 - Posição atual: 4788.5 KB (100.0%)
+2025-05-24 11:27:04.190 | INFO     | __main__:monitor_positions:210 - Iniciando monitoramento de posições de carros para a sessão ID=233
+2025-05-24 11:27:04.191 | INFO     | __main__:monitor_positions:211 - Arquivo de entrada: f1_data.txt
+2025-05-24 11:27:04.614 | INFO     | __main__:connect:69 - Conexão com o banco de dados estabelecida para session_id=233
+2025-05-24 11:27:04.703 | INFO     | __main__:connect:79 - Sessão encontrada: ID=233, Name=Qualifying, Type=Qualifying
+2025-05-24 11:27:52.117 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:27:52.118 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 6997.1s
+2025-05-24 11:27:52.118 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11814
+2025-05-24 11:27:52.119 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:27:52.119 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:27:52.120 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:27:52.120 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4857.4 KB
+2025-05-24 11:27:52.121 | INFO     | __main__:monitor_positions:285 - Posição atual: 4857.4 KB (100.0%)
+2025-05-24 11:28:04.999 | INFO     | __main__:monitor_positions:276 - === Relatório de Progresso ===
+2025-05-24 11:28:04.999 | INFO     | __main__:monitor_positions:277 - Tempo em execução: 60.3s
+2025-05-24 11:28:05.000 | INFO     | __main__:monitor_positions:278 - Linhas processadas: 11840
+2025-05-24 11:28:05.000 | INFO     | __main__:monitor_positions:279 - Posições encontradas: 0
+2025-05-24 11:28:05.000 | INFO     | __main__:monitor_positions:280 - Posições inseridas: 0
+2025-05-24 11:28:05.001 | INFO     | __main__:monitor_positions:281 - Pilotos rastreados: 0
+2025-05-24 11:28:05.001 | INFO     | __main__:monitor_positions:284 - Tamanho do arquivo: 4869.7 KB
+2025-05-24 11:28:05.001 | INFO     | __main__:monitor_positions:285 - Posição atual: 4869.7 KB (100.0%)
+2025-05-24 11:28:41.068 | INFO     | __main__:handle_shutdown:29 - Sinal de encerramento recebido (2)
+2025-05-24 11:28:41.546 | INFO     | __main__:monitor_positions:302 - === Relatório Final ===
+2025-05-24 11:28:41.546 | INFO     | __main__:monitor_positions:303 - Tempo total: 7046.5s
+2025-05-24 11:28:41.547 | INFO     | __main__:monitor_positions:304 - Linhas processadas: 11913
+2025-05-24 11:28:41.547 | INFO     | __main__:monitor_positions:305 - Posições encontradas: 0
+2025-05-24 11:28:41.548 | INFO     | __main__:monitor_positions:306 - Posições inseridas: 0
+2025-05-24 11:28:41.548 | INFO     | __main__:monitor_positions:307 - Pilotos rastreados: 0
+2025-05-24 11:28:41.600 | INFO     | __main__:close:172 - Conexão com o banco de dados fechada
+2025-05-24 11:28:41.601 | INFO     | __main__:monitor_positions:316 - Monitoramento encerrado
