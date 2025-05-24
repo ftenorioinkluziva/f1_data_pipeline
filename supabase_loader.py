@@ -9,7 +9,7 @@ from models import Driver, Session, LapData, Position, TelemetryData, RaceContro
 from config_supabase import DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD
 
 class SupabaseLoader:
-    """Carrega dados da F1 no Supabase via conexão PostgreSQL"""
+    """Carrega dados da F1 no Supabase via conexão PostgreSQL usando tabelas existentes"""
     
     def __init__(self):
         self.pool = None
@@ -27,8 +27,8 @@ class SupabaseLoader:
             )
             logger.info("Conexão estabelecida com sucesso")
             
-            # Verifica se as tabelas existem, caso contrário, cria
-            await self._ensure_tables_exist()
+            # Apenas verifica se as tabelas existem, não as cria
+            await self._verify_tables_exist()
             
         except Exception as e:
             logger.error(f"Erro ao conectar ao Supabase: {e}")
@@ -43,299 +43,255 @@ class SupabaseLoader:
             await self.pool.close()
             logger.info("Conexão com o Supabase fechada")
     
-    async def _ensure_tables_exist(self) -> None:
-        """Verifica se as tabelas necessárias existem no Supabase, caso contrário, cria-as"""
+    async def _verify_tables_exist(self) -> None:
+        """Verifica se as tabelas necessárias existem no Supabase"""
+        required_tables = [
+            'sessions', 'weather_data', 'session_drivers', 'driver_positions', 
+            'car_positions', 'car_telemetry', 'race_control_messages', 'team_radio'
+        ]
+        
         async with self.pool.acquire() as conn:
-            # No Supabase, precisamos usar o esquema public explicitamente
-            
-            # Tabela de sessões
-            await conn.execute('''
-                CREATE TABLE IF NOT EXISTS public.sessions (
-                    id SERIAL PRIMARY KEY,
-                    session_key INTEGER UNIQUE NOT NULL,
-                    meeting_key INTEGER NOT NULL,
-                    name VARCHAR(255),
-                    date TIMESTAMP WITH TIME ZONE,
-                    circuit VARCHAR(255),
-                    type VARCHAR(50),
-                    location VARCHAR(255),
-                    country_name VARCHAR(255),
-                    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-                )
-            ''')
-            
-            # Tabela de pilotos
-            await conn.execute('''
-                CREATE TABLE IF NOT EXISTS public.drivers (
-                    id SERIAL PRIMARY KEY,
-                    driver_number INTEGER UNIQUE NOT NULL,
-                    name VARCHAR(255),
-                    team VARCHAR(255),
-                    country_code VARCHAR(10),
-                    team_color VARCHAR(10),
-                    first_name VARCHAR(100),
-                    last_name VARCHAR(100),
-                    short_name VARCHAR(10),
-                    headshot_url TEXT,
-                    broadcast_name VARCHAR(255),
-                    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-                    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-                )
-            ''')
-            
-            # Tabela de dados de voltas
-            await conn.execute('''
-                CREATE TABLE IF NOT EXISTS public.lap_data (
-                    id SERIAL PRIMARY KEY,
-                    driver_number INTEGER NOT NULL,
-                    lap_number INTEGER NOT NULL,
-                    lap_time FLOAT,
-                    sector_1_time FLOAT,
-                    sector_2_time FLOAT,
-                    sector_3_time FLOAT,
-                    speed_trap INTEGER,
-                    timestamp TIMESTAMP WITH TIME ZONE,
-                    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-                    UNIQUE (driver_number, lap_number)
-                )
-            ''')
-            
-            # Tabela de posições
-            await conn.execute('''
-                CREATE TABLE IF NOT EXISTS public.positions (
-                    id SERIAL PRIMARY KEY,
-                    driver_number INTEGER NOT NULL,
-                    position INTEGER NOT NULL,
-                    timestamp TIMESTAMP WITH TIME ZONE NOT NULL,
-                    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-                )
-            ''')
-            
-            # Tabela de telemetria
-            await conn.execute('''
-                CREATE TABLE IF NOT EXISTS public.telemetry (
-                    id SERIAL PRIMARY KEY,
-                    driver_number INTEGER NOT NULL,
-                    timestamp TIMESTAMP WITH TIME ZONE NOT NULL,
-                    speed INTEGER,
-                    rpm INTEGER,
-                    gear INTEGER,
-                    throttle INTEGER,
-                    brake INTEGER,
-                    drs INTEGER,
-                    x FLOAT,
-                    y FLOAT,
-                    z FLOAT,
-                    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-                )
-            ''')
-            
-            # Tabela de controle de corrida
-            await conn.execute('''
-                CREATE TABLE IF NOT EXISTS public.race_control (
-                    id SERIAL PRIMARY KEY,
-                    timestamp TIMESTAMP WITH TIME ZONE NOT NULL,
-                    message TEXT NOT NULL,
-                    category VARCHAR(50),
-                    flag VARCHAR(50),
-                    driver_number INTEGER,
-                    scope VARCHAR(50),
-                    sector INTEGER,
-                    lap_number INTEGER,
-                    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-                )
-            ''')
-            
-            # Tabela de dados meteorológicos
-            await conn.execute('''
-                CREATE TABLE IF NOT EXISTS public.weather (
-                    id SERIAL PRIMARY KEY,
-                    timestamp TIMESTAMP WITH TIME ZONE NOT NULL,
-                    air_temp FLOAT,
-                    track_temp FLOAT,
-                    humidity FLOAT,
-                    pressure FLOAT,
-                    wind_speed FLOAT,
-                    wind_direction INTEGER,
-                    rainfall BOOLEAN,
-                    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-                )
-            ''')
-            
-            # Cria índices para melhorar a performance
             try:
-                # Índice de timestamp para posições
-                await conn.execute('''
-                    CREATE INDEX IF NOT EXISTS positions_timestamp_idx 
-                    ON public.positions (timestamp)
-                ''')
+                # Verifica quais tabelas existem
+                existing_tables = await conn.fetch('''
+                    SELECT table_name 
+                    FROM information_schema.tables 
+                    WHERE table_schema = 'public' 
+                    AND table_type = 'BASE TABLE'
+                    AND table_name = ANY($1::text[])
+                ''', required_tables)
                 
-                # Índice de timestamp para telemetria
-                await conn.execute('''
-                    CREATE INDEX IF NOT EXISTS telemetry_timestamp_idx 
-                    ON public.telemetry (timestamp)
-                ''')
+                existing_table_names = [row['table_name'] for row in existing_tables]
+                logger.info(f"Tabelas encontradas: {existing_table_names}")
                 
-                # Índice de driver_number para lap_data
-                await conn.execute('''
-                    CREATE INDEX IF NOT EXISTS lap_data_driver_number_idx 
-                    ON public.lap_data (driver_number)
-                ''')
+                # Verifica se todas as tabelas necessárias existem
+                missing_tables = set(required_tables) - set(existing_table_names)
+                if missing_tables:
+                    logger.warning(f"Tabelas não encontradas: {missing_tables}")
+                    logger.warning("O pipeline pode falhar se essas tabelas não existirem!")
+                else:
+                    logger.info("Todas as tabelas necessárias foram encontradas")
                 
-                logger.info("Índices criados com sucesso")
+                # Verifica estrutura específica das tabelas mais importantes
+                await self._verify_sessions_table_structure(conn)
+                await self._verify_weather_data_table_structure(conn)
+                
             except Exception as e:
-                logger.error(f"Erro ao criar índices: {e}")
+                logger.error(f"Erro ao verificar estrutura das tabelas: {e}")
+    
+    async def _verify_sessions_table_structure(self, conn):
+        """Verifica se a tabela sessions tem a estrutura esperada"""
+        try:
+            columns = await conn.fetch('''
+                SELECT column_name, data_type 
+                FROM information_schema.columns 
+                WHERE table_schema = 'public' 
+                AND table_name = 'sessions'
+                ORDER BY ordinal_position
+            ''')
             
-            logger.info("Verificação e criação de tabelas concluída")
+            column_info = {row['column_name']: row['data_type'] for row in columns}
+            logger.debug(f"Estrutura da tabela sessions: {column_info}")
+            
+            # Verifica se os campos essenciais existem
+            essential_fields = ['id', 'key', 'name', 'type']
+            missing_fields = [field for field in essential_fields if field not in column_info]
+            
+            if missing_fields:
+                logger.error(f"Campos essenciais não encontrados na tabela sessions: {missing_fields}")
+            else:
+                logger.info("Estrutura da tabela sessions verificada com sucesso")
+                
+        except Exception as e:
+            logger.error(f"Erro ao verificar estrutura da tabela sessions: {e}")
+    
+    async def _verify_weather_data_table_structure(self, conn):
+        """Verifica se a tabela weather_data tem a estrutura esperada"""
+        try:
+            columns = await conn.fetch('''
+                SELECT column_name, data_type 
+                FROM information_schema.columns 
+                WHERE table_schema = 'public' 
+                AND table_name = 'weather_data'
+                ORDER BY ordinal_position
+            ''')
+            
+            column_info = {row['column_name']: row['data_type'] for row in columns}
+            logger.debug(f"Estrutura da tabela weather_data: {column_info}")
+            
+            # Verifica se os campos essenciais existem
+            essential_fields = ['id', 'session_id', 'timestamp', 'air_temp', 'track_temp']
+            missing_fields = [field for field in essential_fields if field not in column_info]
+            
+            if missing_fields:
+                logger.error(f"Campos essenciais não encontrados na tabela weather_data: {missing_fields}")
+            else:
+                logger.info("Estrutura da tabela weather_data verificada com sucesso")
+                
+        except Exception as e:
+            logger.error(f"Erro ao verificar estrutura da tabela weather_data: {e}")
     
     async def load_batch(self, batch_data: Dict[str, List]) -> None:
-        """Carrega um lote de dados no Supabase"""
+        """Carrega um lote de dados no Supabase usando tabelas existentes"""
         if not self.pool:
             logger.error("Conexão com o banco de dados não inicializada")
             return
         
         async with self.pool.acquire() as conn:
             async with conn.transaction():
-                # Carrega sessões
+                # Carrega sessões - usando campos corretos da tabela existente
                 if batch_data.get('sessions'):
                     await self._load_sessions(conn, batch_data['sessions'])
                 
-                # Carrega drivers
+                # Carrega drivers -> session_drivers
                 if batch_data.get('drivers'):
-                    await self._load_drivers(conn, batch_data['drivers'])
+                    await self._load_session_drivers(conn, batch_data['drivers'])
                 
-                # Carrega dados de volta
+                # Carrega dados de volta (não há tabela específica, usar driver_positions se necessário)
                 if batch_data.get('lap_data'):
-                    await self._load_lap_data(conn, batch_data['lap_data'])
+                    logger.info("lap_data não mapeado para tabela específica - ignorando")
                 
-                # Carrega posições
+                # Carrega posições -> driver_positions
                 if batch_data.get('positions'):
-                    await self._load_positions(conn, batch_data['positions'])
+                    await self._load_driver_positions(conn, batch_data['positions'])
                 
-                # Carrega telemetria
+                # Carrega telemetria -> car_telemetry
                 if batch_data.get('telemetry'):
-                    await self._load_telemetry(conn, batch_data['telemetry'])
+                    await self._load_car_telemetry(conn, batch_data['telemetry'])
                 
-                # Carrega controle de corrida
+                # Carrega controle de corrida -> race_control_messages
                 if batch_data.get('race_control'):
-                    await self._load_race_control(conn, batch_data['race_control'])
+                    await self._load_race_control_messages(conn, batch_data['race_control'])
                 
                 # Carrega dados meteorológicos
                 if batch_data.get('weather'):
                     await self._load_weather(conn, batch_data['weather'])
+                
+                # Carrega posições dos carros (nova funcionalidade)
+                if batch_data.get('car_positions'):
+                    await self._load_car_positions(conn, batch_data['car_positions'])
     
     async def _load_sessions(self, conn, sessions: List[Session]) -> None:
-        """Carrega dados de sessão no Supabase"""
+        """Carrega dados de sessão no Supabase usando estrutura da tabela existente"""
         if not sessions:
             return
             
         for session in sessions:
             try:
+                # Usar os campos corretos da tabela sessions
                 await conn.execute('''
                     INSERT INTO public.sessions (
-                        session_key, meeting_key, name, date, circuit, 
-                        type, location, country_name
-                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
-                    ON CONFLICT (session_key) DO UPDATE SET
-                        meeting_key = EXCLUDED.meeting_key,
-                        name = EXCLUDED.name,
-                        date = EXCLUDED.date,
-                        circuit = EXCLUDED.circuit,
+                        key, type, name, start_date, race_id,
+                        end_date, gmt_offset, path, created_at, updated_at
+                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+                    ON CONFLICT (key) DO UPDATE SET
                         type = EXCLUDED.type,
-                        location = EXCLUDED.location,
-                        country_name = EXCLUDED.country_name
+                        name = EXCLUDED.name,
+                        start_date = EXCLUDED.start_date,
+                        end_date = EXCLUDED.end_date,
+                        updated_at = CURRENT_TIMESTAMP
                 ''', 
-                    session.session_key, session.meeting_key, session.name, 
-                    session.date, session.circuit, getattr(session, 'type', None),
-                    getattr(session, 'location', None), getattr(session, 'country_name', None)
+                    session.session_key,  # maps to 'key' field
+                    getattr(session, 'type', 'Unknown'),
+                    session.name,
+                    session.date,  # maps to 'start_date'
+                    getattr(session, 'race_id', 1),  # Default race_id, adjust as needed
+                    getattr(session, 'end_date', None),
+                    getattr(session, 'gmt_offset', None),
+                    getattr(session, 'path', None),
+                    datetime.now(),
+                    datetime.now()
                 )
             except Exception as e:
                 logger.error(f"Erro ao inserir sessão {session.session_key}: {e}")
     
-    async def _load_drivers(self, conn, drivers: List[Driver]) -> None:
-        """Carrega dados de pilotos no Supabase"""
+    async def _load_session_drivers(self, conn, drivers: List[Driver]) -> None:
+        """Carrega dados de pilotos na tabela session_drivers do Supabase"""
         if not drivers:
             return
-            
+        
+        # Nota: Esta função precisa de um session_id para mapear para session_drivers
+        # Como não temos session_id no modelo Driver, vamos log um aviso        
+        logger.warning("Carregamento de drivers requer session_id específico - funcionalidade não implementada completamente")
+        
         for driver in drivers:
             try:
+                # Esta query precisa ser ajustada com um session_id real
                 await conn.execute('''
-                    INSERT INTO public.drivers (
-                        driver_number, name, team, country_code, team_color,
-                        first_name, last_name, short_name, headshot_url, broadcast_name
-                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
-                    ON CONFLICT (driver_number) DO UPDATE SET
-                        name = EXCLUDED.name,
-                        team = EXCLUDED.team,
-                        country_code = EXCLUDED.country_code,
+                    INSERT INTO public.session_drivers (
+                        session_id, driver_number, full_name, broadcast_name, tla,
+                        team_name, team_color, first_name, last_name,
+                        headshot_url, created_at, updated_at
+                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)
+                    ON CONFLICT (session_id, driver_number) DO UPDATE SET
+                        full_name = EXCLUDED.full_name,
+                        broadcast_name = EXCLUDED.broadcast_name,
+                        tla = EXCLUDED.tla,
+                        team_name = EXCLUDED.team_name,
                         team_color = EXCLUDED.team_color,
                         first_name = EXCLUDED.first_name,
                         last_name = EXCLUDED.last_name,
-                        short_name = EXCLUDED.short_name,
                         headshot_url = EXCLUDED.headshot_url,
-                        broadcast_name = EXCLUDED.broadcast_name,
                         updated_at = CURRENT_TIMESTAMP
                 ''', 
-                    driver.driver_number, driver.name, driver.team, driver.country_code,
-                    getattr(driver, 'team_color', None), getattr(driver, 'first_name', None),
-                    getattr(driver, 'last_name', None), getattr(driver, 'short_name', None),
-                    getattr(driver, 'headshot_url', None), getattr(driver, 'broadcast_name', None)
+                    1,  # session_id placeholder - precisa ser implementado corretamente
+                    str(driver.driver_number), 
+                    driver.name or '', 
+                    getattr(driver, 'broadcast_name', None),
+                    getattr(driver, 'short_name', None),
+                    driver.team, 
+                    getattr(driver, 'team_color', None),
+                    getattr(driver, 'first_name', None),
+                    getattr(driver, 'last_name', None),
+                    getattr(driver, 'headshot_url', None),
+                    datetime.now(), 
+                    datetime.now()
                 )
             except Exception as e:
-                logger.error(f"Erro ao inserir piloto {driver.driver_number}: {e}")
+                logger.error(f"Erro ao inserir piloto {driver.driver_number} na session_drivers: {e}")
     
-    async def _load_lap_data(self, conn, lap_data_list: List[LapData]) -> None:
-        """Carrega dados de voltas no Supabase"""
-        if not lap_data_list:
-            return
-            
-        for lap_data in lap_data_list:
-            try:
-                await conn.execute('''
-                    INSERT INTO public.lap_data (
-                        driver_number, lap_number, lap_time, sector_1_time,
-                        sector_2_time, sector_3_time, speed_trap, timestamp
-                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
-                    ON CONFLICT (driver_number, lap_number) DO UPDATE SET
-                        lap_time = COALESCE(EXCLUDED.lap_time, lap_data.lap_time),
-                        sector_1_time = COALESCE(EXCLUDED.sector_1_time, lap_data.sector_1_time),
-                        sector_2_time = COALESCE(EXCLUDED.sector_2_time, lap_data.sector_2_time),
-                        sector_3_time = COALESCE(EXCLUDED.sector_3_time, lap_data.sector_3_time),
-                        speed_trap = COALESCE(EXCLUDED.speed_trap, lap_data.speed_trap),
-                        timestamp = EXCLUDED.timestamp
-                ''', 
-                    lap_data.driver_number, lap_data.lap_number, lap_data.lap_time,
-                    lap_data.sector_1_time, lap_data.sector_2_time, lap_data.sector_3_time,
-                    lap_data.speed_trap, lap_data.timestamp
-                )
-            except Exception as e:
-                logger.error(f"Erro ao inserir lap data para piloto {lap_data.driver_number}, volta {lap_data.lap_number}: {e}")
-    
-    async def _load_positions(self, conn, positions: List[Position]) -> None:
-        """Carrega dados de posição no Supabase"""
+    async def _load_driver_positions(self, conn, positions: List[Position]) -> None:
+        """Carrega dados de posição na tabela driver_positions do Supabase"""
         if not positions:
             return
             
-        # Para posições, usamos inserção em massa para melhor performance
         try:
-            values = [(p.driver_number, p.position, p.timestamp) for p in positions]
+            # Mapeia para a estrutura da tabela driver_positions
+            values = [(
+                1,  # session_id placeholder - precisa ser implementado
+                p.timestamp.replace(tzinfo=None) if p.timestamp.tzinfo else p.timestamp,  # timestamp without time zone
+                str(p.driver_number),
+                p.position,
+                datetime.now(),
+                datetime.now()
+            ) for p in positions]
+            
             await conn.executemany('''
-                INSERT INTO public.positions (driver_number, position, timestamp)
-                VALUES ($1, $2, $3)
+                INSERT INTO public.driver_positions 
+                (session_id, timestamp, driver_number, position, created_at, updated_at)
+                VALUES ($1, $2, $3, $4, $5, $6)
             ''', values)
+            
         except Exception as e:
-            logger.error(f"Erro ao inserir posições em lote: {e}")
+            logger.error(f"Erro ao inserir posições na driver_positions: {e}")
     
-    async def _load_telemetry(self, conn, telemetry_list: List[TelemetryData]) -> None:
-        """Carrega dados de telemetria no Supabase"""
+    async def _load_car_telemetry(self, conn, telemetry_list: List[TelemetryData]) -> None:
+        """Carrega dados de telemetria na tabela car_telemetry do Supabase"""
         if not telemetry_list:
             return
             
-        # Para telemetria, usamos inserção em massa para melhor performance
         try:
             values = [(
-                t.driver_number, t.timestamp, t.speed, t.rpm, t.gear,
-                t.throttle, t.brake, t.drs, t.x, t.y, t.z
+                t.timestamp.replace(tzinfo=None) if t.timestamp.tzinfo else t.timestamp,  # timestamp without time zone
+                t.timestamp.replace(tzinfo=None) if t.timestamp.tzinfo else t.timestamp,  # utc_timestamp
+                1,  # session_id placeholder
+                str(t.driver_number),
+                t.rpm, t.speed, t.gear,
+                float(t.throttle) if t.throttle else None,
+                float(t.brake) if t.brake else None,
+                t.drs,
+                datetime.now(),
+                datetime.now()
             ) for t in telemetry_list]
             
             # Dividir em lotes menores para evitar sobrecarga
@@ -344,54 +300,95 @@ class SupabaseLoader:
                 batch = values[i:i+batch_size]
                 
                 await conn.executemany('''
-                    INSERT INTO public.telemetry (
-                        driver_number, timestamp, speed, rpm, gear,
-                        throttle, brake, drs, x, y, z
-                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
+                    INSERT INTO public.car_telemetry (
+                        timestamp, utc_timestamp, session_id, driver_number,
+                        rpm, speed, gear, throttle, brake, drs,
+                        created_at, updated_at
+                    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)
                 ''', batch)
                 
                 logger.debug(f"Lote de telemetria inserido: {len(batch)} registros")
                 
         except Exception as e:
-            logger.error(f"Erro ao inserir telemetria em lote: {e}")
+            logger.error(f"Erro ao inserir telemetria na car_telemetry: {e}")
     
-    async def _load_race_control(self, conn, race_control_list: List[RaceControl]) -> None:
-        """Carrega mensagens de controle de corrida no Supabase"""
+    async def _load_race_control_messages(self, conn, race_control_list: List[RaceControl]) -> None:
+        """Carrega mensagens de controle de corrida na tabela race_control_messages do Supabase"""
         if not race_control_list:
             return
             
         try:
             values = [(
-                rc.timestamp, rc.message, rc.category, rc.flag,
-                rc.driver_number, getattr(rc, 'scope', None),
-                getattr(rc, 'sector', None), getattr(rc, 'lap_number', None)
+                1,  # session_id placeholder  
+                rc.timestamp,  # timestamp with time zone OK
+                getattr(rc, 'utc_time', None),
+                rc.category,
+                rc.message,
+                rc.flag,
+                getattr(rc, 'scope', None),
+                getattr(rc, 'sector', None),
+                datetime.now(),
+                datetime.now()
             ) for rc in race_control_list]
             
             await conn.executemany('''
-                INSERT INTO public.race_control (
-                    timestamp, message, category, flag,
-                    driver_number, scope, sector, lap_number
-                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+                INSERT INTO public.race_control_messages (
+                    session_id, timestamp, utc_time, category, message,
+                    flag, scope, sector, created_at, updated_at
+                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
             ''', values)
         except Exception as e:
-            logger.error(f"Erro ao inserir race control em lote: {e}")
+            logger.error(f"Erro ao inserir mensagens de controle na race_control_messages: {e}")
     
-    async def _load_weather(self, conn, weather_list: List[Weather]) -> None:
-        """Carrega dados meteorológicos no Supabase"""
-        if not weather_list:
+    async def _load_car_positions(self, conn, car_positions_list) -> None:
+        """Carrega posições dos carros na tabela car_positions do Supabase"""
+        if not car_positions_list:
             return
             
         try:
             values = [(
-                w.timestamp, w.air_temp, w.track_temp, w.humidity,
-                w.pressure, w.wind_speed, w.wind_direction, w.rainfall
+                1,  # session_id placeholder
+                pos.timestamp,  # timestamp with time zone OK
+                getattr(pos, 'utc_time', None),
+                str(pos.driver_number),
+                getattr(pos, 'x_coord', pos.x if hasattr(pos, 'x') else None),
+                getattr(pos, 'y_coord', pos.y if hasattr(pos, 'y') else None),
+                getattr(pos, 'z_coord', pos.z if hasattr(pos, 'z') else None),
+                datetime.now(),
+                datetime.now()
+            ) for pos in car_positions_list]
+            
+            await conn.executemany('''
+                INSERT INTO public.car_positions (
+                    session_id, timestamp, utc_time, driver_number,
+                    x_coord, y_coord, z_coord, created_at, updated_at
+                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+            ''', values)
+            
+        except Exception as e:
+            logger.error(f"Erro ao inserir posições dos carros na car_positions: {e}")
+    
+    async def _load_weather(self, conn, weather_list: List[Weather]) -> None:
+        """Carrega dados meteorológicos no Supabase usando a tabela weather_data existente"""
+        if not weather_list:
+            return
+            
+        try:
+            # Note: usando a estrutura da tabela weather_data existente
+            values = [(
+                None,  # session_id será None se não especificado
+                w.timestamp.replace(tzinfo=None) if w.timestamp.tzinfo else w.timestamp,  # timestamp without time zone
+                w.air_temp, w.track_temp, w.humidity,
+                w.pressure, w.wind_speed, w.wind_direction, w.rainfall,
+                datetime.now(), datetime.now()
             ) for w in weather_list]
             
             await conn.executemany('''
-                INSERT INTO public.weather (
-                    timestamp, air_temp, track_temp, humidity,
-                    pressure, wind_speed, wind_direction, rainfall
-                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+                INSERT INTO public.weather_data (
+                    session_id, timestamp, air_temp, track_temp, humidity,
+                    pressure, wind_speed, wind_direction, rainfall,
+                    created_at, updated_at
+                ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
             ''', values)
         except Exception as e:
             logger.error(f"Erro ao inserir weather em lote: {e}")

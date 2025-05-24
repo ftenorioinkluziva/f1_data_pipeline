@@ -45,28 +45,19 @@ class PerformanceMonitor:
         """Registra quantidade de dados meteorológicos processados"""
         self.weather_data_count += count
     
-def report_if_needed(self, force: bool = False):
-    """Gera relatório periódico de performance"""
-    current_time = time.time()
-    if force or (current_time - self.last_report_time >= 60):  # Relatório a cada minuto
-        elapsed = current_time - self.start_time
-        recent_batches = self.batch_times[-100:] if self.batch_times else []
-        
-        logger.info(f"=== Relatório de Performance ===")
-        logger.info(f"Tempo total em execução: {elapsed:.2f}s")
-        logger.info(f"Total de linhas processadas: {self.total_lines_processed}")
-        logger.info(f"Total de registros inseridos: {self.total_records_inserted}")
-        
-        if recent_batches and sum(recent_batches) > 0:  # Verificação para evitar divisão por zero
-            avg_batch_time = sum(recent_batches) / len(recent_batches)
-            max_batch_time = max(recent_batches)
-            logger.info(f"Tempo médio de processamento por lote: {avg_batch_time*1000:.2f}ms")
-            logger.info(f"Tempo máximo de processamento por lote: {max_batch_time*1000:.2f}ms")
-            logger.info(f"Taxa de processamento: {len(recent_batches)/sum(recent_batches):.2f} lotes/s")
-        else:
-            logger.info("Não há dados de processamento ou todos os tempos são zero")
-        
-        self.last_report_time = current_time
+    def report_if_needed(self, force: bool = False):
+        """Gera relatório periódico de performance"""
+        current_time = time.time()
+        if force or (current_time - self.last_report_time >= 60):  # Relatório a cada minuto
+            elapsed = current_time - self.start_time
+            
+            logger.info(f"=== Relatório de Performance ===")
+            logger.info(f"Tempo total em execução: {elapsed:.2f}s")
+            logger.info(f"Total de linhas processadas: {self.total_lines_processed}")
+            logger.info(f"Dados meteorológicos processados: {self.weather_data_count}")
+            logger.info(f"Tamanho atual do arquivo: {self.file_size/1024:.2f} KB")
+            
+            self.last_report_time = current_time
 
 # Configura o logger
 logger.add("f1_extraction.log", rotation="10 MB", level="INFO", retention="1 week")
@@ -113,18 +104,18 @@ class WeatherDataProcessor:
         
         try:
             async with self.supabase.pool.acquire() as conn:
-                # Busca a sessão pelo ID
+                # Busca a sessão pelo ID usando os campos corretos da tabela sessions
                 row = await conn.fetchrow('''
-                    SELECT id, key, name, start_date, end_date, race_id 
+                    SELECT id, key, name, type, start_date, end_date, race_id 
                     FROM public.sessions 
                     WHERE id = $1
-                ''', self.key)
+                ''', self.session_id)
                 
                 if row:
                     self.session_info = dict(row)
-                    logger.info(f"Sessão encontrada: ID={self.key},  Nome={row['name']}")
+                    logger.info(f"Sessão encontrada: ID={self.session_id}, Key={row['key']}, Nome={row['name']}, Tipo={row['type']}")
                 else:
-                    logger.warning(f"ATENÇÃO: Sessão com ID={self.key} não encontrada no banco de dados.")
+                    logger.warning(f"ATENÇÃO: Sessão com ID={self.session_id} não encontrada no banco de dados.")
                     logger.warning("Os dados serão inseridos com este ID mesmo assim, mas verifique se está correto!")
         except Exception as e:
             logger.error(f"Erro ao verificar sessão: {e}")
@@ -141,25 +132,27 @@ class WeatherDataProcessor:
         timestamp_str = data.get('timestamp', '')
         
         try:
-            # Parse do timestamp
+            # Parse do timestamp - IMPORTANTE: usar timestamp without time zone
             if timestamp_str:
                 try:
-                    timestamp = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
+                    # Parse como timezone-aware e depois converter para naive (without time zone)
+                    aware_dt = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
+                    timestamp = aware_dt.replace(tzinfo=None)  # Remove timezone info
                 except ValueError:
                     timestamp = datetime.now()
             else:
                 timestamp = datetime.now()
             
-            # Parse dos dados meteorológicos
-            air_temp = self._parse_float(weather_data.get('AirTemp', ''))
-            track_temp = self._parse_float(weather_data.get('TrackTemp', ''))
-            humidity = self._parse_float(weather_data.get('Humidity', ''))
-            pressure = self._parse_float(weather_data.get('Pressure', ''))
-            wind_speed = self._parse_float(weather_data.get('WindSpeed', ''))
+            # Parse dos dados meteorológicos com os tipos corretos
+            air_temp = self._parse_numeric(weather_data.get('AirTemp', ''))
+            track_temp = self._parse_numeric(weather_data.get('TrackTemp', ''))
+            humidity = self._parse_numeric(weather_data.get('Humidity', ''))
+            pressure = self._parse_numeric(weather_data.get('Pressure', ''))
+            wind_speed = self._parse_numeric(weather_data.get('WindSpeed', ''))
             wind_direction = self._parse_int(weather_data.get('WindDirection', ''))
-            rainfall = self._parse_float(weather_data.get('Rainfall', 'false'))
+            rainfall = self._parse_numeric(weather_data.get('Rainfall', '0'))  # Rainfall como numeric, não boolean
             
-            # Inserção no banco de dados
+            # Inserção no banco de dados usando a estrutura correta da tabela weather_data
             if self.supabase and self.supabase.pool:
                 async with self.supabase.pool.acquire() as conn:
                     await conn.execute('''
@@ -169,33 +162,30 @@ class WeatherDataProcessor:
                             created_at, updated_at
                         ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
                     ''', 
-                        self.id, timestamp, air_temp, track_temp, humidity,
+                        self.session_id, timestamp, air_temp, track_temp, humidity,
                         pressure, rainfall, wind_direction, wind_speed,
                         datetime.now(), datetime.now()
                     )
                 
                 logger.debug(f"Dados meteorológicos inseridos: {timestamp}, Temp: {air_temp}°C, Pista: {track_temp}°C")
-                
-                query_result = await conn.fetchval('''
-                    SELECT COUNT(*) FROM public.weather_data 
-                    WHERE session_id = $1
-                ''', self.session_id)
-
-                logger.info(f"Total de registros meteorológicos para sessão {self.session_id}: {query_result}")
                 return 1
                 
         except Exception as e:
             logger.error(f"Erro ao processar dados meteorológicos: {e}")
+            logger.debug(f"Dados que causaram erro: {weather_data}")
         
         return 0
     
-    def _parse_float(self, value: Any) -> Optional[float]:
-        """Converte valor para float ou retorna None"""
+    def _parse_numeric(self, value: Any) -> Optional[float]:
+        """Converte valor para numeric (float) ou retorna None"""
         if value is None or value == '':
             return None
         
-        if isinstance(value, bool) or value == 'true' or value == 'false':
-            return 1.0 if str(value).lower() == 'true' else 0.0
+        # Se for boolean ou string boolean, converte para número
+        if isinstance(value, bool):
+            return 1.0 if value else 0.0
+        if isinstance(value, str) and value.lower() in ['true', 'false']:
+            return 1.0 if value.lower() == 'true' else 0.0
         
         try:
             return float(value)
@@ -283,18 +273,30 @@ async def main():
                             new_lines = f.readlines()
                             last_position = f.tell()
                             
+                            perf_monitor.total_lines_processed += len(new_lines)
+                            
                             # Processa apenas linhas com dados meteorológicos
                             weather_data_count = 0
                             for line in new_lines:
                                 try:
-                                    data = json.loads(line)
-                                    if data.get('topic') == 'WeatherData':
-                                        count = await weather_processor.process_weather_data(data)
-                                        weather_data_count += count
-                                except json.JSONDecodeError:
-                                    pass
+                                    # Parse do formato [topic, data, timestamp]
+                                    import ast
+                                    parsed_data = ast.literal_eval(line)
+                                    
+                                    if isinstance(parsed_data, list) and len(parsed_data) >= 3:
+                                        topic, data_content, timestamp = parsed_data
+                                        
+                                        if topic == 'WeatherData':
+                                            # Reconstroi o formato esperado pela função
+                                            data_dict = {
+                                                'topic': topic,
+                                                'data': data_content,
+                                                'timestamp': timestamp
+                                            }
+                                            count = await weather_processor.process_weather_data(data_dict)
+                                            weather_data_count += count
                                 except Exception as e:
-                                    logger.error(f"Erro ao processar linha: {e}")
+                                    logger.debug(f"Erro ao processar linha: {e}")
                             
                             if weather_data_count > 0:
                                 logger.info(f"Processados {weather_data_count} novos registros de dados meteorológicos")
@@ -321,6 +323,7 @@ async def main():
                 break
             except Exception as e:
                 logger.error(f"Erro no loop de monitoramento: {e}")
+                logger.debug(traceback.format_exc())
                 # Espera um pouco mais em caso de erro
                 await asyncio.sleep(1)
         

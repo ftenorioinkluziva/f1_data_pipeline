@@ -46,37 +46,17 @@ class WeatherDataProcessor:
             self.connected = True
             logger.info(f"Conexão com o banco de dados estabelecida para session_id={self.session_id}")
             
-            # Verifica quais colunas existem na tabela sessions
+            # Verifica se a sessão existe (usando campos corretos da tabela sessions)
             try:
-                columns = await self.conn.fetch("""
-                    SELECT column_name 
-                    FROM information_schema.columns 
-                    WHERE table_schema = 'public' AND table_name = 'sessions'
-                """)
-                
-                column_names = [col['column_name'] for col in columns]
-                logger.info(f"Colunas encontradas na tabela sessions: {column_names}")
-                
-                # Cria uma consulta dinâmica baseada nas colunas encontradas
-                fields = ['id']
-                if 'name' in column_names:
-                    fields.append('name')
-                if 'type' in column_names:
-                    fields.append('type')
-                if 'key' in column_names:
-                    fields.append('key')
-                
-                query = f"SELECT {', '.join(fields)} FROM public.sessions WHERE id = $1"
-                
-                # Verifica se a sessão existe
-                session = await self.conn.fetchrow(query, self.session_id)
+                session = await self.conn.fetchrow(
+                    "SELECT id, key, name, type FROM public.sessions WHERE id = $1",
+                    self.session_id
+                )
                 
                 if session:
-                    session_info = ", ".join([f"{k}={session[k]}" for k in session.keys() if k != 'id'])
-                    logger.info(f"Sessão encontrada: ID={session['id']}, {session_info}")
+                    logger.info(f"Sessão encontrada: ID={session['id']}, Key={session['key']}, Name={session['name']}, Type={session['type']}")
                 else:
                     logger.warning(f"Sessão ID={self.session_id} não encontrada! Os dados serão inseridos mesmo assim.")
-            
             except Exception as e:
                 logger.error(f"Erro ao verificar sessão: {e}")
                 logger.info("Continuando sem verificar sessão...")
@@ -110,13 +90,12 @@ class WeatherDataProcessor:
             if topic != 'WeatherData':
                 return False
             
-            # Parse do timestamp - IMPORTANTE: remover fuso horário para tornar naive
+            # Parse do timestamp - IMPORTANTE: usar timestamp without time zone 
             if timestamp_str:
                 try:
-                    # Primeiro parse como timezone-aware
+                    # Parse como timezone-aware e depois converte para naive
                     aware_dt = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
-                    # Depois converte para naive removendo a informação de fuso horário
-                    timestamp = aware_dt.replace(tzinfo=None)
+                    timestamp = aware_dt.replace(tzinfo=None)  # Remove timezone info
                 except ValueError:
                     timestamp = datetime.now()
             else:
@@ -125,24 +104,24 @@ class WeatherDataProcessor:
             # Log dos dados brutos recebidos
             logger.debug(f"Dados meteorológicos brutos: {data}")
             
-            # Valores padrão para cada campo
+            # Valores convertidos para os tipos corretos da tabela weather_data
             fields = {
-                'air_temp': self._parse_float(data.get('AirTemp', '')),
-                'track_temp': self._parse_float(data.get('TrackTemp', '')),
-                'humidity': self._parse_float(data.get('Humidity', '')),
-                'pressure': self._parse_float(data.get('Pressure', '')),
-                'rainfall': self._parse_float(data.get('Rainfall', '0')),
+                'air_temp': self._parse_numeric(data.get('AirTemp', '')),
+                'track_temp': self._parse_numeric(data.get('TrackTemp', '')),
+                'humidity': self._parse_numeric(data.get('Humidity', '')),
+                'pressure': self._parse_numeric(data.get('Pressure', '')),
+                'rainfall': self._parse_numeric(data.get('Rainfall', '0')),  # numeric, não boolean
                 'wind_direction': self._parse_int(data.get('WindDirection', '')),
-                'wind_speed': self._parse_float(data.get('WindSpeed', ''))
+                'wind_speed': self._parse_numeric(data.get('WindSpeed', ''))
             }
             
             # Log detalhado do que estamos tentando inserir
             logger.debug(f"Inserindo dados meteorológicos: {timestamp}, Temp: {fields['air_temp']}°C, Pista: {fields['track_temp']}°C")
             
-            # Garantir que os timestamps de criação/atualização também são naive
+            # Timestamps de criação/atualização como naive (without time zone)
             now = datetime.now()
             
-            # Inserir no banco de dados
+            # Inserir no banco de dados usando a estrutura correta da tabela weather_data
             await self.conn.execute("""
                 INSERT INTO public.weather_data (
                     session_id, timestamp, air_temp, track_temp, humidity,
@@ -167,13 +146,16 @@ class WeatherDataProcessor:
             logger.debug(f"Dados que causaram o erro: {data}")
             return False
     
-    def _parse_float(self, value: Any) -> Optional[float]:
-        """Converte valor para float ou retorna None"""
+    def _parse_numeric(self, value: Any) -> Optional[float]:
+        """Converte valor para numeric (float) ou retorna None"""
         if value is None or value == '':
             return None
         
-        if isinstance(value, bool) or value == 'true' or value == 'false':
-            return 1.0 if str(value).lower() == 'true' else 0.0
+        # Se for boolean ou string boolean, converte para número
+        if isinstance(value, bool):
+            return 1.0 if value else 0.0
+        if isinstance(value, str) and value.lower() in ['true', 'false']:
+            return 1.0 if value.lower() == 'true' else 0.0
         
         try:
             return float(value)
